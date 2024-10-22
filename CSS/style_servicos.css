@@ -27,3 +27,8 @@ body {
     font-weight: 400;
     line-height: normal;
 }
+
+.img {
+    width: 60px;
+    height: 50px;
+}
