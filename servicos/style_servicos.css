@@ -50,3 +50,11 @@ article {
     font-weight: 400;
     line-height: normal;
 }
+
+.subtitulo {
+    color: #FFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
