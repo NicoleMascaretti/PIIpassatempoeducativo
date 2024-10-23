@@ -1,0 +1,32 @@
+html, body {
+  height: 100%;
+}
+
+nav {
+  text-align: center;
+  background-color: white;
+  margin: 5px 0;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0 20px;
+  color: #ff7900;
+  font-family: 'Anton';
+}
+
+#marrom{
+  background-color: #5c3100;
+  height: 63%;
+  display: grid;
+  align-items: center;
+}
+
+#marrom p {
+  color: white;
+  font-family: 'Aoboshi One';
+}
+
+#quem-somos {
+  height: 37%;
+}
