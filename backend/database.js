@@ -1,77 +1,33 @@
-const readline  = require("readline");
+const { MongoClient } = require("mongodb");
 
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-  
-function askQuestion(query) {
-    return new Promise(resolve => {
-        rl.question(query, answer => {
-            resolve(answer);
-        });
-    });
-};
+// Funcao para adicionar novo usuario no banco de dados
 
-async function println(x){
-    return console.log(x);
-}
-async function add(newUsers){
+async function add(username, salt, hashpsw){
+    const url = "mongodb+srv://gugsgod:123454321@cluster111.qppkx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster111";
+
+    const client = new MongoClient(url);
+    await client.connect();
+    // database and collection names
+    const dbName = "passatempoEducativo";
+    const collectionName = "users";
+    // database and collection definition
+    const database = client.db(dbName);
+    const collection = database.collection(collectionName);
+
     let user = [];
-    for (i = 0; i < newUsers; i++) {
-        let username = await askQuestion("Insert username: ");
-        let salt = await askQuestion("Insert salt: ");
-        let psw = await askQuestion("Insert psw hashed: ");
-
-        user.push(
-            {
-                username:username,
-                salt:salt,
-                hash_psw:psw,
-            }
-        )
-    }
-    console.log(user)
-    /*
+    user.push(
+        {
+            username:username,
+            salt:salt,
+            hash_psw:hashpsw,
+        }
+    )
+    
+    // Codigo para inserir no banco de dados
     try  {
         const insertManyResult = await collection.insertMany(user);
         return console.log(`${insertManyResult.insertedCount} documents successfully inserted \n`);
     } catch (err) {
         return console.error(`Something went wrong trying to insert the new documents:  ${err}\n`)
     }
-    */
 }
- 
-const { MongoClient } = require("mongodb");
-
-async function run() { 
-    const url = "";
-
-    const client = new MongoClient(url);
-
-    await client.connect();
-
-    const dbName = "passatempoEducativo";
-    const collectionName = "users";
-
-    const database = client.db(dbName);
-    const collection = database.collection(collectionName);
-
-    const user = [
-        {
-            username:"gugsgod",
-            salt: "salgrosso",
-            hash_psw: "kajsd23jjj432klknudnkjhiwuehql",
-        },
-        {
-            username:"nicoleMascaretti",
-            salt:"salgado",
-            hash_psw: "fjhalshdgf3g28fyg8d27fg3872gfgu",
-        }
-    ]
-
-    
-
-}
-
-add(3);
