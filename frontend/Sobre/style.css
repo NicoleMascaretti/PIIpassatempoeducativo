@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -8,25 +9,43 @@ nav {
   margin: 0;
 }
 
-nav a {
-  text-decoration: none;
-  padding: 0 20px;
-  color: #ff7900;
-  font-family: 'Anton';
-}
-
-#marrom{
+#marrom {
   background-color: #5c3100;
-  height: 63%;
-  display: grid;
-  align-items: center;
 }
 
 #marrom p {
   color: white;
   font-family: 'Aoboshi One';
+  font-size: 32px;
 }
 
-#quem-somos {
-  height: 37%;
+.atual,
+.link {
+  text-decoration: none;
+  /* padding: 20px;  */
+  font-family: 'Anton';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
+
+.link {
+  color: #ff7900;
+}
+
+.atual {
+  color: black;
+}
+
+#marrom img {
+  height: 10%;
+}
+
+
+/* .vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+} */
