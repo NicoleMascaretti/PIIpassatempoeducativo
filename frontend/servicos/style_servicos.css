@@ -10,7 +10,7 @@ body {
 .links {
     text-decoration: none;
     color: #FF7900;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Aboshi One;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -18,10 +18,15 @@ body {
     
 }
 
+.aoboshi-one-regular {
+    font-family: "Aoboshi One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 .atual {
     text-decoration: none;
     color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -35,8 +40,8 @@ body {
 
 .titulo {
     color: #FFF;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 42px;
+    font-family: Anton;
+    font-size: 70px;
     font-style: normal;
     font-weight: 400;
     line-height: 2;
@@ -44,7 +49,7 @@ body {
 
 article {
     color: #FFF;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Anuphan;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;

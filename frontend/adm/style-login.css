@@ -14,5 +14,16 @@ body {
 
 #basic-addon1{
     width: 20px;
-    height: 20px;
+    height: 60px;
 }
+
+#basic-addon2{
+    width: 20px;
+    height: 60px;
+}
+
+#botao-entrar{
+    width: 400px;
+    height: 60px;
+}
+
