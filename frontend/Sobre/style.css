@@ -11,6 +11,7 @@ nav {
 
 #marrom {
   background-color: #5c3100;
+  height: 435px;
 }
 
 #marrom p {
@@ -24,7 +25,7 @@ nav {
   text-decoration: none;
   /* padding: 20px;  */
   font-family: 'Anton';
-  font-size: 20px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -38,14 +39,10 @@ nav {
   color: black;
 }
 
-#marrom img {
-  height: 10%;
+#foto-empresa {
+  padding: 8px 0px;
 }
 
-
-/* .vertical-center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-} */
+#img-logo {
+  height: 64px;
+}

@@ -13,9 +13,11 @@
 
 <body>
   <div class="container-fluid">
-    <nav class="row justify-content-start text-center menu p-2">
-      <div class="col-md logo">
-        <img src="/frontend/msg/logo.png" alt="logo" class="img">
+
+    <!-- Navbar -->
+    <nav class="row justify-content-start text-center menu p-2 d-flex align-items-center">
+      <div class="col-md p-2 ">
+        <img src="/frontend/msg/logo.png" alt="logo" id="img-logo">
       </div>
       <div class="col-md p-3">
         <a href="" class="link">INÍCIO</a>
@@ -33,21 +35,26 @@
         <a href="" class="link">CONTATO</a>
       </div>
     </nav>
-  </div>
-  <!-- Container marrom -->
-  <div id="marrom" class="container-fluid">
-    <div class="row d-flex flex-wrap align-items-center">
-      <div class="col-md-6 text-start">
-        <p class="fs-4">"Nossa missão é impactar positivamente o aprendizado e o conhecimento"</p>
-      </div>
-      <div class="col-md-6 text-end align-right" class="vertical-center">
-        <img src="https://scinter.com.br/wp-content/uploads/2024/10/image-34-146-1024x640.jpg" alt="foto">
-      </div>
-    </div>
-  </div>
-  <div id="quem-somos">
 
   </div>
+  <main>
+    <!-- Container marrom -->
+    <div id="marrom" class="container-fluid">
+      <div class="row d-flex flex-wrap align-items-center h-100">
+        <div class="col-md-6 text-start">
+          <p class="fs-4">"Nossa missão é impactar positivamente o aprendizado e o conhecimento"</p>
+        </div>
+        <div class="col-md-6 text-end align-right">
+          <img id="foto-empresa" class="rounded img-fluid" src="/frontend/msg/home.heic" alt="foto">
+        </div>
+      </div>
+    </div>
+
+    <!-- Container sobre a empresa -->
+    <div id="quem-somos">
+
+    </div>
+  </main>
 </body>
 
 </html>
