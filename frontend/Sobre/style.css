@@ -7,6 +7,7 @@ nav {
   text-align: center;
   background-color: white;
   margin: 0;
+  padding: 0px 8px;
 }
 
 #marrom {
@@ -20,12 +21,11 @@ nav {
   font-size: 32px;
 }
 
-.atual,
-.link {
+.atual, .link {
   text-decoration: none;
   /* padding: 20px;  */
-  font-family: 'Anton';
-  font-size: 28px;
+  font-family: 'Aoboshi One';
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -44,5 +44,14 @@ nav {
 }
 
 #img-logo {
-  height: 64px;
+  height: 100px;
+}
+
+#botao-entrar {
+  background-color: #68F128;
+  border-radius: 25px;
+}
+
+#botao-entrar a {
+  color: white;
 }
