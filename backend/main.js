@@ -2,13 +2,32 @@
 
 const express = require('express');
 const app = express();
+const mongoose  = require('mongoose')
 app.use(express.json());
 
 app.get('/hey', (req,res) => {
     res.send('hey');
 });
 
-app.listen(3000, () => console.log("up and running"));
+app.listen(3000, () => {
+    try {
+    mongoDbConnect()
+    console.log("up and running")
+    } 
+    catch (e){
+        console.log("Erro:", e)
+    }
+
+})
+
+const Filmes = mongoose.model ("Filme", mongoose.Schema({
+    titulo: {type: String},
+    sinopse: {type: String}
+}))
+
+async function mongoDbConnect(){
+    mongoose.connect("mongodb+srv://gugsgod:123454321@cluster111.qppkx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster111")
+}
 
 let filmes = [
 {
