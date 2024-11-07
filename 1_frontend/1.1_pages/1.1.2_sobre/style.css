@@ -49,9 +49,7 @@ nav {
 
 #botao-entrar {
   background-color: #68F128;
-  border-radius: 25px;
-}
-
-#botao-entrar a {
+  /* border-radius: 25px; */
   color: white;
+  border: none;
 }
