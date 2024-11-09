@@ -1,0 +1,52 @@
+body{
+    background-color: #FF7900;
+    margin: 0;
+}
+
+.menu {
+    background-color: white;
+}
+
+.links {
+    text-decoration: none;
+    color: #FF7900;
+    font-family: Aboshi One;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+
+.aoboshi-one-regular {
+    font-family: "Aoboshi One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.atual {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.logo img {
+    height: 60px;
+    width: 60px;
+}
+
+.botao-entrar{
+    background-color: #68F128;
+    border-radius: 0;
+    border: none;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.titulo{
+    color: white;
+    font-family: Anton;
+}
