@@ -2,15 +2,15 @@
   "name": "piipassatempoeducativo",
   "version": "1.0.0",
   "description": "Esse repositório é destinado à um projeto da faculdade, onde usamos: HTML, CSS, JavaScript, fundamentos de UX/UI, estatística e lógica matemática para o desenvolvimento geral.",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon backend/main.js"
+    "start": "nodemon 2_backend/main.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "mongodb": "^6.10.0",
     "mongoose": "^8.8.0"
