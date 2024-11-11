@@ -49,4 +49,12 @@ body{
 .titulo{
     color: white;
     font-family: Anton;
+    font-size: 80px;
+}
+
+#form{
+    border-radius: 0;
+    box-shadow: 20px;
+    border: solid 2px #D9D9D9;
+    color: black;
 }
