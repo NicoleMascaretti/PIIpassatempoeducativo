@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -87,6 +87,7 @@
         <!----- Linha titulo ----->
         <div class="row justify-content-center">
             <div class="col-sm-12 col-md-6 col-lg-6 p-3 text-center">
+                <!----- titulo ----->
                 <h1 class="fw-bolder titulo">
                     CONTATE-NOS
                 </h1>
@@ -96,17 +97,50 @@
         <!----- Linha formulário ----->
         <div class="row justify-content-center">
             <div class="col-sm-12 col-md-6 col-lg-6 p-3">
+
+                <!----- Input Nome ----->
                 <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Nome" id="form">
+                    <input type="text" class="form-control shadow" placeholder="Nome" id="form">
                 </div>
+
+                <!----- Input Email ----->
                 <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Email" id="form">
+                    <input type="text" class="form-control shadow" placeholder="Email" id="form">
                 </div>
-                <div>
-                    <textarea class="form-control" rows="5" placeholder="Digite sua mensagem aqui" id="form"></textarea>
+
+                <!----- Input Mensagem ----->
+                <div class="mb-3">
+                    <textarea class="form-control shadow" rows="5" placeholder="Digite sua mensagem aqui" id="form"></textarea>
                 </div>
+
+                <!----- Botão para enviar ----->
+                <div class="mb-3 mt-4 p-2 text-center">
+                    <button class="botao-enviar btn btn-md btn-success">
+                        Enviar
+                    </button>
+                </div>
+
             </div>
         </div>
+
+        <!-- Rodapé -->
+        <div class="row linha-rodape border justify-content-center d-flex">
+            <div class="col-sm-4 col-md-4 col-lg-4 mt-3 text-start">
+                <footer class="texto-rodape">
+                    <p>&copy; 2024 <a href="https://passatempoeducativo.org.br">passatempoeducativo.org.br</a></p>
+                </footer>
+            </div>
+
+            <!-- Redes sociais -->
+            <div class="col-sm-8 col-md-8 col-lg-8 mt-3">
+                <footer class="text-end redes">
+                    <img src="/1_frontend/1.2_assets/1.2.1_logos/facebook.png" alt="">
+                    <img src="/1_frontend/1.2_assets/1.2.1_logos/Instagram.png" alt="">
+                    <img src="/1_frontend/1.2_assets/1.2.1_logos/whatsapp.png" alt="">
+                </footer>
+            </div>
+        </div>
+
     </main>
 
 </body>
