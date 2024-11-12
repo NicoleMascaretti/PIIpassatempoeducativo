@@ -4,7 +4,7 @@ const Users = mongoose.model ( "User", mongoose.Schema({
     salt: {type: String}
 }))
 
-async function inserirUsuarios (string user, string psw) {
+async function inserirUsuarios (String user, String psw) {
     // storing variables
     const user = req.body.user
     const psw = req.body.psw
