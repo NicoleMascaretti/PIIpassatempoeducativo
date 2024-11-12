@@ -58,24 +58,56 @@
             </div>
     </div>
     </header>
-    <main></main>
-    <footer>
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src=".../800x400?auto=yes&bg=777&fg=555&text=Primeiro Slide" alt="Primeiro Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Segundo Slide" alt="Segundo Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Terceiro Slide" alt="Terceiro Slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+          </div>
+    </main>
+    <style>
+        .social-icon {
+            width: 35px; 
+            height: 35px;
+        }
+    </style>
+    
+    <footer class="container-fluid" id="rodap">
         <!-- Rodapé -->
-        <div class="row linha-rodape">
-            <div class="col-sm-4 col-md-4 col-lg-4 mt-3 text-start">
-                <footer class="texto-rodape">
-                    <p>&copy; 2024 <a href="https://passatempoeducativo.org.br">passatempoeducativo.org.br</a></p>
-                </footer>
+        <div class="row justify-content-between align-items-center p-3">
+            <div class="col-6 text-start">
+                <p class="texto-rodape mb-0">&copy; 2024 <a href="https://passatempoeducativo.org.br">passatempoeducativo.org.br</a></p>
             </div>
             <!-- Redes sociais -->
-            <div class="col-sm-8 col-md-8 col-lg-8 mt-3">
-                <footer class="text-end redes">
-                    <img src="/1_frontend/1.2_assets/1.2.1_logos/facebook.png" alt="">
-                    <img src="/1_frontend/1.2_assets/1.2.1_logos/Instagram.png" alt="">
-                    <img src="/1_frontend/1.2_assets/1.2.1_logos/whatsapp.png" alt="">
-                </footer>
+            <div class="col-6 text-end">
+                <img src="/1_frontend/1.2_assets/1.2.1_logos/facebook.png" alt="Facebook" class="social-icon me-2">
+                <img src="/1_frontend/1.2_assets/1.2.1_logos/Instagram.png" alt="Instagram" class="social-icon me-2">
+                <img src="/1_frontend/1.2_assets/1.2.1_logos/whatsapp.png" alt="WhatsApp" class="social-icon">
             </div>
         </div>
     </footer>
-    <script src="navbar.js"></script>
+    
+    
+    <script src="home.js"></script>
 </body>

@@ -34,3 +34,7 @@ const MobileNavBar = new MobileNavBar(
 );
 
 MobileNavBar.navList
+
+$('.carousel').carousel({
+    interval: 2000
+  })

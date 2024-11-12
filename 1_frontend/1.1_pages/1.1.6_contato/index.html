@@ -124,28 +124,29 @@
 
             </div>
         </div>
-
-        <!-- Rodapé -->
-        <div class="row linha-rodape mt-5">
-            <div class="col-sm-4 col-md-4 col-lg-4 mt-3">
-                <footer class="texto-rodape">
-                    <p>&copy; 2024 <a href="https://passatempoeducativo.org.br">passatempoeducativo.org.br</a></p>
-                </footer>
-            </div>
-
-            <!-- Redes sociais -->
-            <div class="col-sm-8 col-md-8 col-lg-8 mt-3 text-end">
-                <footer class="redes">
-                    <img src="/1_frontend/1.2_assets/1.2.1_logos/facebook.png" alt="">
-                    <img src="/1_frontend/1.2_assets/1.2.1_logos/Instagram.png" alt="">
-                    <img src="/1_frontend/1.2_assets/1.2.1_logos/whatsapp.png" alt="">
-                </footer>
-            </div>
-
-        </div>
-
     </main>
-
+    <style>
+        .social-icon {
+            width: 35px; 
+            height: 35px;
+        }
+    </style>
+    
+    <footer class="container-fluid" id="rodap">
+        <!-- Rodapé -->
+        <div class="row justify-content-between align-items-center p-3">
+            <div class="col-6 text-start">
+                <p class="texto-rodape mb-0">&copy; 2024 <a href="https://passatempoeducativo.org.br">passatempoeducativo.org.br</a></p>
+            </div>
+            <!-- Redes sociais -->
+            <div class="col-6 text-end">
+                <img src="/1_frontend/1.2_assets/1.2.1_logos/facebook.png" alt="Facebook" class="social-icon me-2">
+                <img src="/1_frontend/1.2_assets/1.2.1_logos/Instagram.png" alt="Instagram" class="social-icon me-2">
+                <img src="/1_frontend/1.2_assets/1.2.1_logos/whatsapp.png" alt="WhatsApp" class="social-icon">
+            </div>
+        </div>
+    </footer>
+    
 </body>
 
 </html>
