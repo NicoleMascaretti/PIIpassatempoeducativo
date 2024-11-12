@@ -66,11 +66,10 @@ body{
 
 
 .linha-rodape {
-    width: 100%;
+    width: 103%;
     height: 15%;
     flex-shrink: 0;
     background: #5C3100;
-    margin: 0;
 }
 
 .texto-rodape {
@@ -82,7 +81,7 @@ body{
     line-height: normal;
 }
 
-.texto-rodape a{
+.texto-rodape a {
     color: #FFF;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
