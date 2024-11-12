@@ -7,23 +7,19 @@ nav {
   text-align: center;
   background-color: white;
   margin: 0;
-  padding: 0px 8px;
 }
 
 #marrom {
   background-color: #5c3100;
-  height: 435px;
 }
 
 #marrom p {
   color: white;
   font-family: 'Aoboshi One';
-  font-size: 32px;
 }
 
 .atual, .link {
   text-decoration: none;
-  /* padding: 20px;  */
   font-family: 'Aoboshi One';
   font-size: 18px;
   font-style: normal;
@@ -40,16 +36,35 @@ nav {
 }
 
 #foto-empresa {
-  padding: 8px 0px;
+  max-width: 70%;
+  height: auto;
+  border-radius: 25px;
 }
 
 #img-logo {
   height: 100px;
+  padding-top: 12px;
 }
 
 #botao-entrar {
   background-color: #68F128;
-  /* border-radius: 25px; */
   color: white;
   border: none;
+}
+
+h1, h2 {
+  font-family: 'Anton';
+}
+
+#quem-somos, #reconhecimentos {
+  color: white;
+  background-color: #ff7900;
+}
+
+#historia {
+  background-color: white;
+}
+
+#quem-somos, #reconhecimentos, #historia p {
+  font-family: 'Anuphan';
 }
