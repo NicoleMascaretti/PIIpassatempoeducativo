@@ -43,7 +43,7 @@ body{
     border-radius: 0;
     border: none;
     width: 100px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
 }
 
 .titulo{
