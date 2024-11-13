@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
     background-color: #FF7900;
 }
@@ -36,28 +38,30 @@ body {
     border: none;
 }
 
-#input-usuario{
+#input{
     width: 40px;
     height: 70px;
-}
-
-#input-senha{
-    width: 40px;
-    height: 70px;
+    color: black;
 }
 
 #botao-entrar{
+    font-family: 'Be Vietnam Pro', sons-serif;
+    font-size: 20px;
     width: 300px;
     height: 50px;
     background-color: #6DEF31;
-    border-radius: 0;
-    border-color: #D9D9D9;
+    border-radius: 10px;
+    flex-shrink: 0;
+    color: white;
 }
 
 #botao-cancelar{
+    font-family: 'Be Vietnam Pro', sons-serif;
+    font-size: 20px;
     width: 300px;
     height: 50px;
-    background-color: #6DEF31;
-    border-radius: 0;
-    border-color: #FF2E2E;
+    background-color: #FF2E2E;
+    border-radius: 10px;
+    flex-shrink: 0;
+    color: white;
 }
