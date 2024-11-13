@@ -27,7 +27,7 @@
             <div class="row justify-content-start text-center menu p-2">
                 <div class="col-sm-12 col-md-12 col-lg-1 logo">
                     <a href="/1_frontend/1.1_pages/1.1.1_home/index.html">
-                        <img src="/1_frontend/1.2_assets/1.2.1_logos/logo.png" alt="" class="img">
+                        <img src="/1_frontend/1.2_assets/1.2.1_logos/logo.png" alt="" class="img" style="height: 40px;">
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-2 p-3">
@@ -46,7 +46,7 @@
                     <a href="#" class="links fw-bolder aoboshi-one-regular">CONTATO</a>
                 </div>
 
-                <!----- Botão Entrar ----->
+                <!-- Botão Entrar -->
                 <div class="col-sm-12 col-md-12 col-lg-1 p-3">
                     <div class="btn-group">
                         <button class="btn btn-success aoboshi-one-regular botao-entrar">
@@ -54,38 +54,101 @@
                         </button>
                     </div>
                 </div>
-
             </div>
-    </div>
+        </div>
     </header>
-    <main>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src=".../800x400?auto=yes&bg=777&fg=555&text=Primeiro Slide" alt="Primeiro Slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Segundo Slide" alt="Segundo Slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Terceiro Slide" alt="Terceiro Slide">
-              </div>
+
+    <!-- Conteúdo principal -->
+    <main class="container-fluid">
+        <div class="row">
+            <!-- Texto acima do carrossel da esquerda -->
+            <div class="col-md-6 text-center mb-3">
+                <h3>Texto Carrossel Esquerda</h3>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Próximo</span>
-            </a>
-          </div>
+            <!-- Texto acima do carrossel da direita -->
+            <div class="col-md-6 text-center mb-3">
+                <h3>Texto Carrossel Direita</h3>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <!-- Carrossel da esquerda -->
+            <div class="col-md-6">
+                <div id="carouselLeft" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 carousel-image" src="/1_frontend/1.2_assets/1.2.3_eventos/Pintura.png" alt="Primeiro Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 carousel-image" src="/1_frontend/1.2_assets/1.2.3_eventos/Programacaoferias1.png" alt="Segundo Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 carousel-image" src="/1_frontend/1.2_assets/1.2.3_eventos/Recreacao1.png" alt="Terceiro Slide">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselLeft" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselLeft" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Carrossel da direita -->
+            <div class="col-md-6">
+                <div id="carouselRight" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 carousel-image" src="/1_frontend/1.2_assets/1.2.3_eventos/Programacaoferias1.png" alt="Slide 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 carousel-image" src="/1_frontend/1.2_assets/1.2.3_eventos/Recreacao1.png" alt="Slide 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 carousel-image" src="/1_frontend/1.2_assets/1.2.3_eventos/Pintura.png" alt="Slide 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselRight" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselRight" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <style>
+        /* Define tamanho da imagem logo na navbar */
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        /* Define espaçamento e cores dos links */
+        .menu a {
+            color: #000000; /* Ajuste a cor dos links */
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .menu .btn {
+            font-weight: bold;
+        }
+
+        /* Remove margens no main */
+        main {
+            margin-top: 10px;
+            padding-top: 0;
+        }
+    </style>
+    
+    
     <style>
         .social-icon {
             width: 35px; 
