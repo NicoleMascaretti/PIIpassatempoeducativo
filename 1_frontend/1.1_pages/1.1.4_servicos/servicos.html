@@ -20,42 +20,57 @@
 </head>
 
 <body>
-    <!-- Container navbar -->
-    <div class="container-fluid">
-        <!-- Links da navbar -->
-        <div class="row justify-content-start text-center menu p-2">
-            <div class="col-sm-12 col-md-12 col-lg-1 logo">
-                <a href="/1_frontend/1.1_pages/1.1.1_home/index.html">
-                    <img src="/1_frontend/1.2_assets/1.2.1_logos/logo.png" alt="" class="img">
-                </a>
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-2 p-3">
-                <a href="/1_frontend/1.1_pages/1.1.1_home/index.html" class="links fw-bolder aoboshi-one-regular">INICIO</a>
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-2 p-3">
-                <a href="#" class="atual fw-bolder aoboshi-one-regular">SERVIÇOS</a>
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-2 p-3">
-                <a href="#" class="links fw-bolder aoboshi-one-regular">GALERIA</a>
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-2 p-3">
-                <a href="#" class="links fw-bolder aoboshi-one-regular">SOBRE NÓS</a>
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-2 p-3">
-                <a href="#" class="links fw-bolder aoboshi-one-regular">CONTATO</a>
-            </div>
 
-            <!----- Botão Entrar ----->
-            <div class="col-sm-12 col-md-12 col-lg-1 p-3">
-                <div class="btn-group">
-                    <button class="btn btn-success aoboshi-one-regular botao-entrar">
-                        ENTRAR
-                    </button>
-                </div>
+
+    <!-- Container da navbar -->
+    <nav class="navbar navbar-expand-lg py-1 py-lg-0 shadow-sm bg-light">
+        <div class="container px-0">
+
+            <!-- Logo -->
+            <img src="/1_frontend/1.2_assets/1.2.1_logos/logo.png" class="logo me-5" alt="">
+
+            <!-- Botão para abrir o menu -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#top-navbar" aria-controls="top-navbar">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <!-- Menu -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="top-navbar" aria-labelledby="top-navbarLabel">
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#top-navbar" aria-controls="top-navbar">
+                    <div class="d-flex justify-content-between p-3">
+                        <img src="/1_frontend/1.2_assets/1.2.1_logos/logo.png" class="logo" alt="">
+                        <i class="bi bi-x-circle"></i>
+                    </div>
+                </button>
+
+                <!-- Links -->
+                <ul class="navbar-nav ms-lg-auto p-4 p-lg-0 d-flex w-100 justify-content-between">
+                    <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+                        <a href="#" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+                        <a href="#" class="nav-link">Serviços</a>
+                    </li>
+                    <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+                        <a href="#" class="nav-link">Galeria</a>
+                    </li>
+                    <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+                        <a href="#" class="nav-link">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+                        <a href="#" class="nav-link">Contato</a>
+                    </li>
+                    <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+                        <a href="#" class="nav-link" id="botao-entrar">Entrar</a>
+                    </li>
+                </ul>
+
             </div>
 
         </div>
-    </div>
+    </nav>
 
     <!-- Container do conteúdo principal -->
     <main class="container-fluid">
