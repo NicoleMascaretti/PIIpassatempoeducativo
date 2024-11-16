@@ -2,10 +2,8 @@
 
 body {
     background-color: #FF7900;
-
 }
 
-/* Inicio style navbar */
 .logo {
     max-width: 60px;
     width: 100%;
@@ -52,34 +50,15 @@ body {
     box-shadow: 0 0 15px green;
     transition: 0.5s;
 }
-/* Fim style navbar */
 
-
-.titulo {
-    color: #FFF;
+.titulo{
+    color: white;
     font-family: Anton;
     font-size: 70px;
     font-style: normal;
     font-weight: 400;
-    line-height: 2;
+    line-height: normal;
     letter-spacing: 3px;
-}
-
-article {
-    color: #FFF;
-    font-family: Anuphan;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.subtitulo {
-    color: #FFF;
-    font-family: 'Be Vietnam Pro', sons-serif;   
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 .card-projeto {
@@ -89,22 +68,7 @@ article {
 }
 
 .card-projeto img {
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
-}
-
-.titulo-card {
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-align: center;
-    margin: 1rem 0 0.5rem;
-}
-
-.descricao {
-    text-align: center;
-    font-size: 1rem;
-    font-family: 'Be Vietnam Pro', sons-serif;
-    margin-bottom: 1rem;
+    border-radius: 0.25rem;
 }
 
 #rodape {

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style-galeria.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Anuphan:wght@100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Container da navbar -->
+    <nav class="navbar navbar-expand-lg py-1 py-lg-0 shadow-sm bg-light">
+        <div class="container px-0">
+
+            <!-- Logo -->
+            <img src="/1_frontend/1.2_assets/1.2.1_logos/logo.png" class="logo me-5" alt="">
+
+            <!-- Botão para abrir o menu -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#top-navbar" aria-controls="top-navbar">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <!-- Menu -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="top-navbar" aria-labelledby="top-navbarLabel">
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#top-navbar" aria-controls="top-navbar">
+                    <div class="d-flex justify-content-between p-3">
+                        <img src="/1_frontend/1.2_assets/1.2.1_logos/logo.png" class="logo" alt="">
+                        <i class="bi bi-x-circle"></i>
+                    </div>
+                </button>
+
+                <!-- Links -->
+                <ul class="navbar-nav ms-lg-auto p-4 p-lg-0 d-flex w-100 justify-content-between">
+                    <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+                        <a href="#" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+                        <a href="#" class="nav-link">Serviços</a>
+                    </li>
+                    <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+                        <a href="#" class="nav-link">Galeria</a>
+                    </li>
+                    <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+                        <a href="#" class="nav-link">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+                        <a href="#" class="nav-link">Contato</a>
+                    </li>
+                    <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+                        <a href="#" class="nav-link" id="botao-entrar">Entrar</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Container da galeria -->
+    <main class="container-fluid">
+        
+        <!-- Titulo -->
+        <div class="row justify-content-center p-4">
+            <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                <h4 class="titulo fw-bolder">Galeria</h4>
+            </div>
+        </div>
+
+        <!-- Galeria -->
+        <div class="row text-center justify-content-arounda align-item-center">
+
+            <!-- Card 1 -->
+            <div class="col-sm-12 col-md-12 col-lg-6 mb-5 text-center">
+
+                <div class="card card-projeto">
+                    <img src="/1_frontend/1.2_assets/1.2.3_eventos/pintura-em-grupo.png" alt="" class="car-img-top">
+                </div>
+
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-6 mb-5 text-center">
+
+                <!-- Card 2 -->
+                <div class="card card-projeto">
+                    <img src="/1_frontend/1.2_assets/1.2.3_eventos/queimada.png" alt="" class="car-img-top">
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 mb-5 text-center">
+
+                <!-- Card 3 -->
+                <div class="card card-projeto">
+                    <img src="/1_frontend/1.2_assets/1.2.3_eventos/circulo.png" alt="" class="car-img-top">
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 mb-5 text-center">
+
+                <!-- Card 4 -->
+                <div class="card card-projeto">
+                    <img src="/1_frontend/1.2_assets/1.2.3_eventos/oficina-plantio.png" alt="" class="car-img-top">
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 mb-5 text-center">
+
+                <!-- Card 5 -->
+                <div class="card card-projeto">
+                    <img src="/1_frontend/1.2_assets/1.2.3_eventos/oficina-criativa.png" alt="" class="car-img-top">
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 mb-5 text-center">
+
+                <!-- Card 6 -->
+                <div class="card card-projeto">
+                    <img src="/1_frontend/1.2_assets/1.2.3_eventos/pintura-em-tela.png" alt="" class="car-img-top">
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 mb-5 text-center">
+
+                <!-- Card 7 -->
+                <div class="card card-projeto">
+                    <img src="/1_frontend/1.2_assets/1.2.3_eventos/oficina-plantio-2.png" alt="" class="car-img-top">
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 mb-5 text-center">
+
+                <!-- Card 8 -->
+                <div class="card card-projeto">
+                    <img src="/1_frontend/1.2_assets/1.2.3_eventos/robo-hidraulico.png" alt="" class="car-img-top">
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <style>
+        .social-icon {
+            width: 35px;
+            height: 35px;
+        }
+    </style>
+
+    <footer class="container-fluid" id="rodape">
+        <!-- Rodapé -->
+        <div class="row justify-content-between align-items-center p-3">
+            <div class="col-6 text-start">
+                <p class="texto-rodape mb-0">&copy; 2024 <a
+                        href="https://passatempoeducativo.org.br">passatempoeducativo.org.br</a></p>
+            </div>
+            <!-- Redes sociais -->
+            <div class="col-6 text-end">
+                <img src="/1_frontend/1.2_assets/1.2.1_logos/facebook.png" alt="Facebook" class="social-icon me-2">
+                <img src="/1_frontend/1.2_assets/1.2.1_logos/Instagram.png" alt="Instagram" class="social-icon me-2">
+                <img src="/1_frontend/1.2_assets/1.2.1_logos/whatsapp.png" alt="WhatsApp" class="social-icon">
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

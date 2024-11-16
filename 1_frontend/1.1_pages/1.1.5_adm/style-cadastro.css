@@ -44,24 +44,21 @@ body {
     color: black;
 }
 
-#botao-entrar{
+#input::placeholder{
+    color: black;
+}
+
+#botao-cadastrar{
     font-family: 'Be Vietnam Pro', sons-serif;
     font-size: 20px;
-    width: 300px;
-    height: 50px;
-    background-color: #6DEF31;
-    border-radius: 10px;
-    flex-shrink: 0;
+    background-color: #46B910;
     color: white;
 }
 
 #botao-cancelar{
     font-family: 'Be Vietnam Pro', sons-serif;
     font-size: 20px;
-    width: 300px;
-    height: 50px;
     background-color: #FF2E2E;
-    border-radius: 10px;
-    flex-shrink: 0;
     color: white;
 }
+
