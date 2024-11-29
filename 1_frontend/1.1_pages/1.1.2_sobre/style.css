@@ -18,11 +18,29 @@ nav {
   font-family: 'Aoboshi One';
 }
 
-.atual, .link {
+.link {
   text-decoration: none;
   font-family: 'Be Vietnam Pro';
   line-height: normal;
   color: black;
+  position: relative;
+}
+
+.link:not(#botao-entrar)::before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.link:not(#botao-entrar):hover::before{
+  transform: scaleX(1);
 }
 
 #foto-empresa {
@@ -50,11 +68,13 @@ nav {
   transition: 0.5s;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'Anton';
 }
 
-#quem-somos, #reconhecimentos {
+#quem-somos,
+#reconhecimentos {
   color: white;
   background-color: #ff7900;
 }
@@ -63,7 +83,9 @@ h1, h2 {
   background-color: white;
 }
 
-#quem-somos, #reconhecimentos, #historia p {
+#quem-somos,
+#reconhecimentos,
+#historia p {
   font-family: 'Anuphan';
 }
 
@@ -84,7 +106,7 @@ h1, h2 {
   padding-right: 100px;
 }
 
-.texto-rodape a{
+.texto-rodape a {
   color: #FFF;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 17px;
