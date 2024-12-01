@@ -28,49 +28,37 @@ body {
 }
 
 #user{
-    width: 20px;
-    height: 20px;
-    /* border: 1px solid black; */
-}
-
-.span-user {
+    width: 30px;
     height: 30px;
-    /* border: 1px solid black; */
-    border: none;
 }
 
 #cadeado{
-    width: 20px;
-    height: 20px;
-    border: none;
-}
-
-.span-cadeado {
+    width: 30px;
     height: 30px;
     border: none;
 }
 
-#input-usuario{
+#input{
     width: 40px;
-    height: 60px;
-}
-
-#input-senha{
-    width: 40px;
-    height: 60px;
-}
-
-#input-usuario::placeholder,
-#input-senha::placeholder {
+    height: 50px;
     color: black;
 }
 
-#botao-entrar{
+#input::placeholder{
+    color: black;
+}
+
+#botao-cadastrar{
     font-family: 'Be Vietnam Pro', sons-serif;
     font-size: 20px;
-    background-color: #6DEF31;
+    background-color: #46B910;
     color: white;
 }
 
-
+#botao-cancelar{
+    font-family: 'Be Vietnam Pro', sons-serif;
+    font-size: 20px;
+    background-color: #FF2E2E;
+    color: white;
+}
 

@@ -1,41 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body{
-    background-color: #FF7900;
-    
+    background-color: #FF7900; 
 }
 
-.menu {
-    background-color: white;
+/* Inicio style navbar */
+.logo {
+    max-width: 60px;
+    width: 100%;
 }
 
-.links {
-    text-decoration: none;
-    color: #FF7900;
-    font-family: Aboshi One;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    
-}
-
-.aoboshi-one-regular {
-    font-family: "Aoboshi One", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-.atual {
-    text-decoration: none;
+.nav-link {
+    font-family: 'Be Vietnam Pro', sons-serif;
+    font-size: 19px;
+    font-weight: 600;
     color: black;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
-.logo img {
-    height: 60px;
-    width: 60px;
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.bi-list {
+    font-size: 2rem;
+}
+
+.bi-x-circle {
+    font-size: 1.5rem;
 }
 
 .botao-entrar{
@@ -43,13 +34,34 @@ body{
     border-radius: 0;
     border: none;
     width: 100px;
-    /* margin-right: 10px; */
 }
 
+#botao-entrar {
+    background-color: #46B910;
+    color: white;
+    border: none;
+    width: 120px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+  
+#botao-entrar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px green;
+    transition: 0.5s;
+}
+/* Fim style navbar */
+
+/* inicio style form contato */
 .titulo{
     color: white;
     font-family: Anton;
     font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
 }
 
 #form{
@@ -58,14 +70,21 @@ body{
     color: black;
 }
 
-.botao-enviar{
-    width: 250px;
+#form::placeholder{
     color: black;
-    border-radius: 0;
 }
 
+.botao-enviar{
+    width: 250px;
+    color: white;
+    background-color: #46B910;
+    font-size: 20px;
+    border: none;
+}
+/* Fim style form contato */
 
-#rodap {
+/* Inicio style rodape */
+#rodape {
     width: 100%;
     height: 15%;
     flex-shrink: 0;
