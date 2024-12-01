@@ -1,0 +1,201 @@
+/* itens da navbar */
+
+/* container da navbar */
+header .menu {
+    display: flex; /* organiza os itens horizontalmente */
+    align-items: center; /* centraliza todos os itens verticalmente */
+    justify-content: space-between; /* cria espaço entre os itens */
+    height: 80px; /* altura fixa da navbar */
+    padding: 0 20px; /* espacamento nas laterais */
+    background-color: #fff; 
+}
+
+/* logo */
+header .menu .logo {
+    display: flex;
+    align-items: center; /* centraliza verticalmente o logo */
+    justify-content: center; /* centraliza horizontalmente */
+    height: 100%; /* ocupa toda a altura da navbar */
+}
+
+header .menu .logo img {
+    height: 74px; /*tam fixo */
+    width: auto; /* mantem a proporcao */
+}
+
+/* links */
+header .menu .links,
+header .menu .atual {
+    display: flex; /* garante flexbox nos links */
+    align-items: center; /* centraliza verticalmente */
+    justify-content: center; /* centraliza horizontalmente */
+    text-decoration: none;
+    color: #000000; /* cor padrao */
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 22px; /* tam da fonte */
+    font-weight: 500;
+    padding: 0 15px; /* espacamento horizontal */
+    height: 100%; /* ocupa toda a altura da navbar */
+    line-height: 1; /* remove espacamento interno extra */
+    transition: color 0.3s ease;
+}
+
+/* hover nos links */
+header .menu .links:hover,
+header .menu .atual:hover {
+    color: #d86703e3; /* cor ao passar o mouse */
+    font-size: 24px;
+    transition: all 0.4s ease;
+}
+
+/* botao "entrar" */
+header .menu .botao-entrar {
+    display: flex;
+    align-items: center; /* centraliza verticalmente */
+    justify-content: center; /* centraliza horizontalmente */
+    color: #fff; /* cor do texto */
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #46B910; 
+    border-radius: 10px; 
+    border: none; 
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* hover no botao */
+header .menu .botao-entrar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 77, 0, 0.5);
+}
+
+/* ajustes para as colunas do Bootstrap */
+header .menu .col-sm-12,
+header .menu .col-md-12,
+header .menu .col-lg-1,
+header .menu .col-lg-2 {
+    display: flex; /* alinha flexbox nas colunas */
+    align-items: center; /* centraliza verticalmente */
+    justify-content: center; /* centraliza horizontalmente */
+    padding: 0; /* remove padding extra */
+    margin: 0; /* remove margens extras */
+    height: 100%; /* garante altura consistente */
+}
+
+/* responsividade */
+@media (max-width: 768px) {
+    header .menu {
+        flex-wrap: wrap; /* permite quebra de linha */
+        justify-content: center; /* centraliza os itens */
+    }
+
+    header .menu .links,
+    header .menu .atual {
+        font-size: 16px; /* reduz tamanho da fonte */
+        margin: 5px 0; /* adiciona espaçamento */
+    }
+
+    header .menu .botao-entrar {
+        font-size: 14px; /* reduz tamanho da fonte */
+        width: 100px; /* ajusta largura */
+        height: 35px; /* ajusta altura */
+    }
+
+    header .menu .logo img {
+        height: 60px; /* ajusta tamanho da logo */
+        width: auto;
+    }
+}
+
+/* estilizacao relacionada ao rodape */
+
+#rodap {
+    width: 100%;
+    height: 15%;
+    flex-shrink: 0;
+    background: #5C3100;
+}
+
+.texto-rodape {
+    color: #FFF;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-right: 100px;
+}
+
+.texto-rodape a{
+    color: #FFF;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.redes img {
+    height: 20px;
+    width: 25px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+/* estilizacao parte central */
+
+.container-central {
+    text-align: center;
+    background-color: #ff7600; /* Cor de fundo laranja */
+    padding: 20px;
+    color: white;
+  }
+  
+  .header-central h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    font-family: "Impact", sans-serif;
+    letter-spacing: 0px;
+  }
+  
+  .header-central p {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    max-width: 700px;
+  }
+  
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 10px; /* Espaçamento entre os itens */
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+  
+  .galeria-item img {
+    width: 100%; /* Garante que a imagem ocupe a largura total da coluna */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 5px;
+  }
+  
+  
+  .galeria-item {
+    position: relative;
+  }
+  
+  @media (max-width: 768px) {
+    .galeria {
+      grid-template-columns: repeat(2, 1fr); /* 2 imagens por linha */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .galeria {
+      grid-template-columns: repeat(1, 1fr); /* 1 imagem por linha */
+    }
+  }
+  
