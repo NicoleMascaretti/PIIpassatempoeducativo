@@ -48,48 +48,52 @@ body {
     color: black;
 }
 
-#botao-cadastrar{
+/* Ajuste de margem entre os botões */
+#botao-cadastrar {
     display: flex;
-    align-items: center; /* centraliza verticalmente */
-    justify-content: center; /* centraliza horizontalmente */
-    color: #fff; /* cor do texto */
+    align-items: center; /* Centraliza texto verticalmente */
+    justify-content: center; /* Centraliza texto horizontalmente */
+    color: #fff; /* Cor do texto */
     font-family: "Libre Franklin", sans-serif;
     font-size: 19px;
     font-weight: 500;
     background-color: #46B910; 
     border-radius: 15px; 
     border: none; 
-    width: 180px;
-    height: 60px;
+    width: 160px;
+    height: 47px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px; /* Espaçamento inferior reduzido */
 }
 
-#botao-cancelar{
+#botao-cancelar {
     display: flex;
-    align-items: center; /* centraliza verticalmente */
-    justify-content: center; /* centraliza horizontalmente */
-    color: #fff; /* cor do texto */
+    align-items: center; /* Centraliza texto verticalmente */
+    justify-content: center; /* Centraliza texto horizontalmente */
+    color: #fff; /* Cor do texto */
     font-family: "Libre Franklin", sans-serif;
     font-size: 16px;
     font-weight: 500;
     background-color: #c90e0e; 
-    border-radius: 10px; 
+    border-radius: 12px; 
     border: none; 
-    width: 130px;
+    width: 120px;
     height: 40px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-a{
-    color: #fff; /* cor do texto */
+/* Link estilizado no botão "Cancelar" */
+a {
+    color: #fff; /* Cor do texto */
     font-family: "Libre Franklin", sans-serif;
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
 }
-/* hover no botao */
+
+/* Hover nos botões */
 #botao-cadastrar:hover {
     transform: scale(1.1);
     box-shadow: 0 0 10px rgba(0, 77, 0, 0.5);
@@ -102,10 +106,22 @@ a{
     transition: 0.5s;
 }
 
+/* Alinha os botões dentro do contêiner */
 .col-sm-12 {
     display: flex; /* Flexbox no contêiner */
     align-items: center; /* Centraliza verticalmente */
     justify-content: center; /* Centraliza horizontalmente */
-    height: 100%; /* Garante que o botão ocupe o espaço vertical */
 }
+
+/* Ajuste de margem nos contêineres */
+/* Define espaçamento consistente entre todos os campos do formulário */
+.input-group {
+    margin-top: 20px; /* Ajusta a margem superior */
+}
+
+/* Remove a margem superior no primeiro campo */
+.input-group:first-of-type {
+    margin-top: 0; /* Sem margem superior no campo "Email" */
+}
+
 
