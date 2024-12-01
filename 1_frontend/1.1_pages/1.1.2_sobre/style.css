@@ -3,6 +3,7 @@ body {
   height: 100%;
 }
 
+/* navbar */
 nav {
   text-align: center;
   background-color: white;
@@ -18,31 +19,10 @@ nav {
   font-family: 'Aoboshi One';
 }
 
-.link {
-  text-decoration: none;
-  font-family: 'Be Vietnam Pro';
-  line-height: normal;
-  color: black;
-  position: relative;
-}
+/* componentes "rotas" da navbar */
+c
 
-.link:not(#botao-entrar)::before{
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #000;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
-.link:not(#botao-entrar):hover::before{
-  transform: scaleX(1);
-}
-
+/*componentes do centro */
 #foto-empresa {
   max-width: 70%;
   height: auto;
@@ -54,6 +34,7 @@ nav {
   padding-top: 12px;
 }
 
+/* botao entrar */
 #botao-entrar {
   background-color: #46B910;
   color: white;

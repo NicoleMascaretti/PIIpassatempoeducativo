@@ -66,11 +66,33 @@ body {
 }
 
 #botao-entrar{
-    font-family: 'Be Vietnam Pro', sons-serif;
-    font-size: 20px;
-    background-color: #6DEF31;
-    color: white;
+    display: flex;
+    align-items: center; /* centraliza verticalmente */
+    justify-content: center; /* centraliza horizontalmente */
+    color: #fff; /* cor do texto */
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #46B910; 
+    border-radius: 10px; 
+    border: none; 
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* hover no botao */
+#botao-entrar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 77, 0, 0.5);
+}
+
+.col-sm-12 {
+    display: flex; /* Flexbox no contêiner */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    height: 100%; /* Garante que o botão ocupe o espaço vertical */
+}
 
 

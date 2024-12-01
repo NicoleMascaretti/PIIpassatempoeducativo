@@ -9,88 +9,60 @@ a {
     transition: 0.3s;
 }
 
-/* itens da navbar */
+/* itens relacionados a navbar */
 
-/* container da navbar */
-header .menu {
-    display: flex; /* organiza os itens horizontalmente */
-    align-items: center; /* centraliza todos os itens verticalmente */
-    justify-content: space-between; /* cria espaço entre os itens */
-    height: 80px; /* altura fixa da navbar */
-    padding: 0 20px; /* espacamento nas laterais */
-    background-color: #fff; 
+nav {
+  text-align: center;
+  background-color: white;
+  margin: 0;
 }
 
-/* logo */
-header .menu .logo {
-    display: flex;
-    align-items: center; /* centraliza verticalmente o logo */
-    justify-content: center; /* centraliza horizontalmente */
-    height: 100%; /* ocupa toda a altura da navbar */
+#img-logo {
+    height: 100px;
+    padding-top: 12px;
 }
 
-header .menu .logo img {
-    height: 74px; /*tam fixo */
-    width: auto; /* mantem a proporcao */
-}
-
-/* links */
-header .menu .links,
-header .menu .atual {
-    display: flex; /* garante flexbox nos links */
-    align-items: center; /* centraliza verticalmente */
-    justify-content: center; /* centraliza horizontalmente */
+/* componentes "rotas" da navbar */
+.link {
     text-decoration: none;
-    color: #000000; /* cor padrao */
-    font-family: "Libre Franklin", sans-serif;
-    font-size: 22px; /* tam da fonte */
-    font-weight: 500;
-    padding: 0 15px; /* espacamento horizontal */
-    height: 100%; /* ocupa toda a altura da navbar */
-    line-height: 1; /* remove espacamento interno extra */
-    transition: color 0.3s ease;
-}
-
-/* hover nos links */
-header .menu .links:hover,
-header .menu .atual:hover {
-    color: #d86703e3; /* cor ao passar o mouse */
-    font-size: 24px;
-    transition: all 0.4s ease;
-}
-
-.texto-botao-entrar{
-    color: #fff; /* cor do texto */
-    font-family: "Libre Franklin", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    border: none;
-    text-decoration: none;
-}
+    font-family: 'Be Vietnam Pro';
+    line-height: normal;
+    color: black;
+    position: relative;
+  }
+  
+  .link:not(#botao-entrar)::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .link:not(#botao-entrar):hover::before{
+    transform: scaleX(1);
+  }
 
 /* botao "entrar" */
-header .menu .botao-entrar {
-    display: flex;
-    align-items: center; /* centraliza verticalmente */
-    justify-content: center; /* centraliza horizontalmente */
-    color: #fff; /* cor do texto */
-    font-family: "Libre Franklin", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    background-color: #46B910; 
-    border-radius: 10px; 
-    border: none; 
-    width: 130px;
-    height: 40px;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* hover no botao */
-header .menu .botao-entrar:hover {
+#botao-entrar {
+    background-color: #46B910;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  
+  #botao-entrar:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(0, 77, 0, 0.5);
-}
+    box-shadow: 0 0 15px green;
+    transition: 0.5s;
+  }
+
 
 /* ajustes para as colunas do Bootstrap */
 header .menu .col-sm-12,
