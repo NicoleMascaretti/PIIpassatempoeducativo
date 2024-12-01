@@ -59,6 +59,15 @@ header .menu .atual:hover {
     transition: all 0.4s ease;
 }
 
+.texto-botao-entrar{
+    color: #fff; /* cor do texto */
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    text-decoration: none;
+}
+
 /* botao "entrar" */
 header .menu .botao-entrar {
     display: flex;
