@@ -9,145 +9,119 @@ a {
     transition: 0.3s;
 }
 
-a:hover {
-    opacity: 0.7;
+/* itens da navbar */
+
+/* container da navbar */
+header .menu {
+    display: flex; /* organiza os itens horizontalmente */
+    align-items: center; /* centraliza todos os itens verticalmente */
+    justify-content: space-between; /* cria espaço entre os itens */
+    height: 80px; /* altura fixa da navbar */
+    padding: 0 20px; /* espacamento nas laterais */
+    background-color: #fff; 
 }
 
-.logo{
+/* logo */
+header .menu .logo {
+    display: flex;
+    align-items: center; /* centraliza verticalmente o logo */
+    justify-content: center; /* centraliza horizontalmente */
+    height: 100%; /* ocupa toda a altura da navbar */
+}
+
+header .menu .logo img {
+    height: 74px; /*tam fixo */
+    width: auto; /* mantem a proporcao */
+}
+
+/* links */
+header .menu .links,
+header .menu .atual {
+    display: flex; /* garante flexbox nos links */
+    align-items: center; /* centraliza verticalmente */
+    justify-content: center; /* centraliza horizontalmente */
+    text-decoration: none;
+    color: #000000; /* cor padrao */
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 22px; /* tam da fonte */
+    font-weight: 500;
+    padding: 0 15px; /* espacamento horizontal */
+    height: 100%; /* ocupa toda a altura da navbar */
+    line-height: 1; /* remove espacamento interno extra */
+    transition: color 0.3s ease;
+}
+
+/* hover nos links */
+header .menu .links:hover,
+header .menu .atual:hover {
+    color: #d86703e3; /* cor ao passar o mouse */
     font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+    transition: all 0.4s ease;
 }
 
-nav{
+/* botao "entrar" */
+header .menu .botao-entrar {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #fff;
-    height: 8vh;
-
-}
-
-main{
-    background-color: #FF7900;
-    background-size: cover;
-    height: 92vh;
-}
-
-.nav-list{
-    list-style: none;
-    display: flex;
-
-}
-
-.nav-list li{
-    letter-spacing: 3px;
-    margin-left: 32px;
-
-    
-}
-
-.mobile-menu{
+    align-items: center; /* centraliza verticalmente */
+    justify-content: center; /* centraliza horizontalmente */
+    color: #fff; /* cor do texto */
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #46B910; 
+    border-radius: 10px; 
+    border: none; 
+    width: 130px;
+    height: 40px;
     cursor: pointer;
-    display: none;
-
-    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.mobile-menu div{
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-
+/* hover no botao */
+header .menu .botao-entrar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 77, 0, 0.5);
 }
 
-@media (max-width: 999px){
-    body{
-        overflow-x: hidden;
+/* ajustes para as colunas do Bootstrap */
+header .menu .col-sm-12,
+header .menu .col-md-12,
+header .menu .col-lg-1,
+header .menu .col-lg-2 {
+    display: flex; /* alinha flexbox nas colunas */
+    align-items: center; /* centraliza verticalmente */
+    justify-content: center; /* centraliza horizontalmente */
+    padding: 0; /* remove padding extra */
+    margin: 0; /* remove margens extras */
+    height: 100%; /* garante altura consistente */
+}
 
-    }
-    .nav-list{
-        position: absolute;
-        top: 8vh;
-        right: 0;
-        width: 50vw;
-        height: 92vh;
-        background-color: #FF7900;
-        align-items: center;
-        justify-content: space-around;
-        transform:translateX(100%);
-        transition: transform 0,3s ease-in;
+/* responsividade */
+@media (max-width: 768px) {
+    header .menu {
+        flex-wrap: wrap; /* permite quebra de linha */
+        justify-content: center; /* centraliza os itens */
     }
 
-    .nav-list li{
-        margin-left: 0;
-        opacity: 0;
+    header .menu .links,
+    header .menu .atual {
+        font-size: 16px; /* reduz tamanho da fonte */
+        margin: 5px 0; /* adiciona espaçamento */
     }
-    
-    .mobile-menu{
-        display: block;
-    
+
+    header .menu .botao-entrar {
+        font-size: 14px; /* reduz tamanho da fonte */
+        width: 100px; /* ajusta largura */
+        height: 35px; /* ajusta altura */
+    }
+
+    header .menu .logo img {
+        height: 60px; /* ajusta tamanho da logo */
+        width: auto;
     }
 }
 
-.nav-list.active {
-    transform: translateX(0);
-    
-}
-
-.menu {
-    background-color: white;
-}
-
-.links {
-    text-decoration: none;
-    color: #FF7900;
-    font-family: Aboshi One;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    
-}
-
-.aoboshi-one-regular {
-    font-family: "Aoboshi One", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-.atual {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.logo img {
-    height: 60px;
-    width: 60px;
-}
-
-.botao-entrar{
-    background-color: #46B910;
-    border-radius: 0;
-    border: none;
-    width: 100px;
-    /* margin-right: 30px; */
-}
-
-.titulo {
-    color: #FFF;
-    font-family: Anton;
-    font-size: 70px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 2;
-}
+/* estilizacao relacionada ao rodape */
 
 #rodap {
     width: 100%;
@@ -182,4 +156,5 @@ main{
     margin-right: 8px;
     margin-left: 8px;
 }
+
 
