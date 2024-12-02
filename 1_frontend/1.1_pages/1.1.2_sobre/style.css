@@ -10,9 +10,7 @@ body {
 
 /* navbar */
 nav {
-  text-align: center;
   background-color: white;
-  margin: 0;
 }
 
 #marrom {
@@ -25,8 +23,91 @@ nav {
   font-size: 50px;
 }
 
+/* Inicio style navbar */
+.logo {
+    max-width: 60px;
+    width: 100%;
+}
+
+nav {
+    background-color: white;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family: 'Be Vietnam Pro';
+    line-height: normal;
+    color: black;
+    position: relative;
+}
+
+.nav-link:not(#botao-entrar)::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-link:not(#botao-entrar):hover::before {
+    transform: scaleX(1);
+}
+
+@media (max-width: 991px) {
+    .nav-link:not(#botao-entrar)::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 20%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #000;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+
+    .nav-link:not(#botao-entrar):hover::before {
+        transform: scaleX(1);
+    }
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.bi-list {
+    font-size: 2rem;
+}
+
+.bi-x-circle {
+    font-size: 1.5rem;
+}
+
+#botao-entrar {
+    background-color: #46B910;
+    color: white;
+    border: none;
+    width: 120px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#botao-entrar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px green;
+    transition: 0.5s;
+}
+
+/* CSS Navbar anterior */
 /* componentes "rotas" da navbar */
-.link {
+/* .link {
   text-decoration: none;
   font-family: 'Be Vietnam Pro';
   line-height: normal;
@@ -49,7 +130,7 @@ nav {
 
 .link:not(#botao-entrar):hover::before{
   transform: scaleX(1);
-}
+} */
 
 /*componentes do centro */
 #foto-empresa {
@@ -64,7 +145,7 @@ nav {
 }
 
 /* botao entrar */
-#botao-entrar {
+/* #botao-entrar {
   background-color: #46B910;
   color: white;
   border: none;
@@ -76,7 +157,7 @@ nav {
   transform: scale(1.1);
   box-shadow: 0 0 15px green;
   transition: 0.5s;
-}
+} */
 
 h1,
 h2 {
