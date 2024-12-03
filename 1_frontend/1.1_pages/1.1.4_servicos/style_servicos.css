@@ -123,7 +123,7 @@ nav {
 
 .titulo {
     font-size: 3.5rem;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-bottom: 10px;
     font-family: "Impact", sans-serif;
     letter-spacing: 0px;
@@ -139,6 +139,13 @@ article {
     padding: 0px; /* espaco interno nas laterais */
     text-align: center; /* Centraliza o texto */
 }
+
+.imagem-ods {
+    max-width: 50%; /* Ajuste o tamanho da imagem (50% da largura do contêiner) */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-top: 10px; /* Espaçamento superior */
+}
+
 
 .row.justify-content-around.mt-4 {
     justify-content: center !important; /* Centraliza o contêiner */
