@@ -168,26 +168,75 @@ nav {
     margin-right: 50px;
   }
 
-.carousel-inner img {
+  
+
+  .carousel-item .row {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaçamento entre os cartões */
+  }
+
+  .carousel-inner img {
+      border-radius: 10px;
+  }
+  
+
+  .carousel-container2{
+    margin-top: 35px;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Força o ajuste completo dentro do cartão */
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    flex-grow: 1; /* Expande para ocupar espaço disponível */
+  }
+
+  .card {
     border-radius: 10px;
-}
-
-.carousel-container2{
-  margin-top: 35px;
-}
-
-.card {
-  height: 300px; /* Garante que os cards fiquem proporcionais */
-  text-align: center;
-  width: 300px;
-}
-
-.row {
-  margin: 0 auto; /* Centraliza os elementos dentro do slide */
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px; /* Define a largura máxima */
+    height: 100%; /* Garante altura uniforme */
+    flex-direction: column; /* Alinha itens verticalmente */
+    justify-content: space-between; /* Distribui espaço entre os itens */
+    flex: 0 0 calc(33.333% - 20px); /* Ocupa 1/3 do espaço disponível, menos o gap */
+    margin: 0 10px; /* Adiciona margem lateral uniforme */
+    display: flex;
+  }
+  
+  .card img {
+    height: 280px; /* Define altura fixa para as imagens */
+    object-fit: cover; /* Mantém proporções sem distorcer */
+    width: 100%; /* Garante que a imagem ocupe toda a largura */
+    align-items: center;
+    align-self: center;
 }
 
 .card-img-top{
-  width: 1000px;
-  height: 400px;
-  object-fit: cover;
+  align-items: center;
+  align-self: center;
+  height: auto;
 }
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Reduz a largura das áreas clicáveis das setas */
+  }
+
+  
