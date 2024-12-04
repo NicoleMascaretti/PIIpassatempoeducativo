@@ -122,6 +122,13 @@ app.get('/eventos', async (req,res)=> {
     }
 })
 
+app.post('/remover-eventos', async (req,res) =>{
+    try {
+
+    } catch (err) {
+        res.status(500).json({ error: "Erro ao remover evento"})
+    }
+})
 
 app.post('/contato', async (req,res)=> {
     const nome = req.body.nome
