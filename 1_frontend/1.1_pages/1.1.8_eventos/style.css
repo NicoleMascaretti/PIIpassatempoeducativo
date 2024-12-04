@@ -1,3 +1,4 @@
+/* estilizacao relacionada a navbar */
 .logo {
   max-width: 60px;
   width: 100%;
@@ -86,15 +87,18 @@ nav {
   box-shadow: 0 0 15px green;
   transition: 0.5s;
 }
+/* fim da estilizacao relacionada a navbar */
 
 /* estilizacao relacionada ao rodape */
 
 #rodap {
-  width: 100%;
-  flex-shrink: 0;
-  background: #5C3100;
-  position: absolute;
-  bottom: 0;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  background: #5C3100; 
+  padding: 10px 20px; /* espacamento interno */
+  color: white; 
+  width: 100%; 
 }
 
 .texto-rodape {
@@ -104,7 +108,8 @@ nav {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  padding-right: 100px;
+  padding-right: 600px;
+  margin: 0;
 }
 
 .texto-rodape a{
@@ -117,99 +122,72 @@ nav {
   text-decoration-line: underline;
 }
 
-.redes img {
-  height: 25px;
-  width: 25px;
-  margin-right: 8px;
-  margin-left: 8px;
-}
+/* fim da estilizacao relacionada ao rodape */
+
 /* estilizacao parte central */
 
-.container-central {
-    text-align: center;
-    background-color: #ff7600; /* Cor de fundo laranja */
-    padding: 20px;
-    color: white;
-  }
-  
-  .header-central h1 {
+  .titulosociais{
+    justify-content: center;
+    display: flex;
     font-size: 3.5rem;
     margin-bottom: 10px;
     font-family: "Impact", sans-serif;
     letter-spacing: 0px;
+    color: #FFF;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
   }
   
-  .header-central p {
-    font-size: 1.2rem;
-    margin: 0 auto;
-    max-width: 700px;
+  .subtitulotitulosociais{
+    font-size: 1.2rem; /* tam menor (usei rem pq é mais flexivel e escalavel) */
+    color: #FFF; 
+    line-height: 1.6; /* espacamento entre linhas */
+    margin-bottom: 20px; /* espacamento abaixo */
+    padding: 0 10px; /* espaco interno nas laterais */
+    margin-left: 50px;
+    margin-right: 50px;
   }
-  
-  .galeria {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
-    gap: 10px; /* Espaçamento entre os itens */
-    margin-top: 20px;
-    padding: 0 10px;
-  }
-  
-  .galeria-item img {
-    width: 100%; /* Garante que a imagem ocupe a largura total da coluna */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 5px;
-  }
-  
-  
-  .galeria-item {
-    position: relative;
-  }
-  
-  @media (max-width: 768px) {
-    .galeria {
-      grid-template-columns: repeat(2, 1fr); /* 2 imagens por linha */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .galeria {
-      grid-template-columns: repeat(1, 1fr); /* 1 imagem por linha */
-    }
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #FFA500; /* Tom de laranja */
-    margin: 0;
-    padding: 0;
-}
 
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
-
-.section {
-    background-color: #FFA500; /* Tom de laranja */
-    padding: 20px;
-    margin-bottom: 50px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    text-align: center;
+  .titulocorp{
+    justify-content: center;
+    display: flex;
+    font-size: 3.5rem;
     margin-bottom: 10px;
-    color: #fff; /* Texto em branco */
-}
-
-p {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #fff; /* Texto em branco */
-}
+    font-family: "Impact", sans-serif;
+    letter-spacing: 0px;
+    color: #FFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
+  }
+  
+  .subtitulotitulocorp{
+    font-size: 1.2rem; /* tam menor (usei rem pq é mais flexivel e escalavel) */
+    color: #FFF; 
+    line-height: 1.6; /* espacamento entre linhas */
+    margin-bottom: 20px; /* espacamento abaixo */
+    padding: 0 10px; /* espaco interno nas laterais */
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 
 .carousel-inner img {
     border-radius: 10px;
+}
+
+.carousel-container2{
+  margin-top: 35px;
+}
+
+.card {
+  height: 300px; /* Garante que os cards fiquem proporcionais */
+  text-align: center;
+  width: 300px;
+}
+
+.row {
+  margin: 0 auto; /* Centraliza os elementos dentro do slide */
+}
+
+.card-img-top{
+  width: 1000px;
+  height: 400px;
+  object-fit: cover;
 }
