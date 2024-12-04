@@ -219,6 +219,11 @@ h2 {
   height: 100%;
 }
 
+.social-icon {
+  width: 35px;
+  height: 35px;
+}
+
 @media (max-width: 768px) {
 
   #container-foto-empresa,

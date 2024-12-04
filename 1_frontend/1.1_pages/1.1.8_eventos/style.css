@@ -322,3 +322,8 @@ nav {
   width: 5%;
   /* Reduz a largura das áreas clicáveis das setas */
 }
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+}

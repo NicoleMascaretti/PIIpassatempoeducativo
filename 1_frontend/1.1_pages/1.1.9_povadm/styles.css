@@ -130,6 +130,10 @@ nav {
   text-decoration: none;
 }
 
+.social-icon {
+    width: 35px;
+    height: 35px;
+}
 /* fim da estilizacao relacionada ao rodape */
 
 .elementos {
