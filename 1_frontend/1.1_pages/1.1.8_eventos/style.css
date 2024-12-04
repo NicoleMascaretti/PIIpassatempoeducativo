@@ -135,7 +135,7 @@ nav {
     letter-spacing: 0px;
     color: #FFF;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
-  }
+}
   
   .subtitulotitulosociais{
     font-size: 1.2rem; /* tam menor (usei rem pq é mais flexivel e escalavel) */
@@ -145,7 +145,7 @@ nav {
     padding: 0 10px; /* espaco interno nas laterais */
     margin-left: 50px;
     margin-right: 50px;
-  }
+}
 
   .titulocorp{
     justify-content: center;
@@ -156,7 +156,7 @@ nav {
     letter-spacing: 0px;
     color: #FFF;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
-  }
+}
   
   .subtitulotitulocorp{
     font-size: 1.2rem; /* tam menor (usei rem pq é mais flexivel e escalavel) */
@@ -166,46 +166,94 @@ nav {
     padding: 0 10px; /* espaco interno nas laterais */
     margin-left: 50px;
     margin-right: 50px;
-  }
-
-  
+}
 
   .carousel-item .row {
     display: flex;
     justify-content: center;
     gap: 15px; /* Espaçamento entre os cartões */
-  }
+}
 
   .carousel-inner img {
       border-radius: 10px;
-  }
+}
   
-
   .carousel-container2{
     margin-top: 35px;
-  }
+}
 
-  .card-body {
+.card1 {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px; /* Define a largura máxima */
+  height: 100%; /* Garante altura uniforme */
+  flex-direction: column; /* Alinha itens verticalmente */
+  justify-content: space-between; /* Distribui espaço entre os itens */
+  flex: 0 0 calc(33.333% - 20px); /* Ocupa 1/3 do espaço disponível, menos o gap */
+  margin: 0 10px; /* Adiciona margem lateral uniforme */
+  display: flex;
+  background-color: #FFF;
+}
+  
+.card1-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Força o ajuste completo dentro do cartão */
+}
+
+.card1-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.card1-text {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  flex-grow: 1; /* Expande para ocupar espaço disponível */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card1 img {
+  height: 280px; /* Define altura fixa para as imagens */
+  object-fit: cover; /* Mantém proporções sem distorcer */
+  width: 100%; /* Garante que a imagem ocupe toda a largura */
+  align-items: center;
+  align-self: center;
+}
+
+.card1-img-top{
+align-items: center;
+align-self: center;
+height: auto;
+}
+
+.card-body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%; /* Força o ajuste completo dentro do cartão */
-  }
+}
 
-  .card-title {
+.card-title {
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 10px;
-  }
+}
 
-  .card-text {
+.card-text {
     font-size: 0.9rem;
     line-height: 1.4;
     margin-bottom: 10px;
     flex-grow: 1; /* Expande para ocupar espaço disponível */
-  }
+}
 
-  .card {
+.card {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -217,9 +265,9 @@ nav {
     flex: 0 0 calc(33.333% - 20px); /* Ocupa 1/3 do espaço disponível, menos o gap */
     margin: 0 10px; /* Adiciona margem lateral uniforme */
     display: flex;
-  }
+}
   
-  .card img {
+.card img {
     height: 280px; /* Define altura fixa para as imagens */
     object-fit: cover; /* Mantém proporções sem distorcer */
     width: 100%; /* Garante que a imagem ocupe toda a largura */
@@ -237,6 +285,6 @@ nav {
 .carousel-control-prev,
 .carousel-control-next {
     width: 5%; /* Reduz a largura das áreas clicáveis das setas */
-  }
+}
 
   
