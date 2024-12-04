@@ -115,4 +115,27 @@ app.get('/eventos', async (req,res)=> {
     }
 })
 
+app.post('/contato', async (req,res)=> {
+    const nome = req.body.nome
+    const email = req.body.email
+    const mensagem = req.body.mensagem
+    
+    const mensagens = new Mensagem({
+        nome: nome,
+        email: email,
+        mensagem: mensagem
+    })
 
+    const respMongo = await mensagens.save()
+    console.log(respMongo)
+    res.end()
+});
+
+app.get('/contato', async (req,res)=> {
+    try {
+        const mensagens = await Mensagem.find()
+        res.status(200).json(mensagens)
+    } catch (err) {
+        res.status(500).json({ error: 'Erro ao buscar mensagens'})
+    }
+});
