@@ -265,3 +265,41 @@ header .menu .col-lg-2 {
     margin-right: 8px;
     margin-left: 8px;
 }
+
+/* estilizacao dos textos acima dos carrosseis */
+/* estilizacao dos titulos */
+.carousel-title {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    font-family: "Impact", sans-serif;
+    letter-spacing: 0px;
+    color: #FFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
+}
+
+/* estilizacao dos paragrafos */
+.carousel-text {
+    font-size: 1.2rem;
+    /* tam menor (usei rem pq é mais flexivel e escalavel) */
+    color: #FFF;
+    line-height: 1.6;
+    /* espacamento entre linhas */
+    margin-bottom: 20px;
+    /* espacamento abaixo */
+    padding: 0 10px;
+    /* espaco interno nas laterais */
+}
+
+/* estilizacao dos carrosseis */
+
+.carousel-inner img {
+    height: 500px;
+    width: 400px;
+    object-fit: cover;
+}
+
+/* estilizacao icones do rodape */
+.social-icon {
+    width: 35px;
+    height: 35px;
+}
