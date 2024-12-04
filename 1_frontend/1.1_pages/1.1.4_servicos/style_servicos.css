@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 body {
     background-color: #FF7900;
@@ -121,37 +122,57 @@ nav {
 
 
 .titulo {
+    font-size: 3.5rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-family: "Impact", sans-serif;
+    letter-spacing: 0px;
     color: #FFF;
-    font-family: Anton;
-    font-size: 70px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 2;
-    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
 }
 
 article {
-    color: #FFF;
-    font-family: Anuphan;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-size: 1.2rem; /* tam menor (usei rem pq é mais flexivel e escalavel) */
+    color: #FFF; 
+    line-height: 1.6; /* espacamento entre linhas */
+    margin-bottom: 0px; /* espacamento abaixo */
+    padding: 0px; /* espaco interno nas laterais */
+    text-align: center; /* Centraliza o texto */
+}
+
+.imagem-ods {
+    max-width: 50%; /* Ajuste o tamanho da imagem (50% da largura do contêiner) */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-top: 10px; /* Espaçamento superior */
+}
+
+
+.row.justify-content-around.mt-4 {
+    justify-content: center !important; /* Centraliza o contêiner */
 }
 
 .subtitulo {
+    font-size: 2.5rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: "Impact", sans-serif;
+    letter-spacing: 1px;
     color: #FFF;
-    font-family: 'Be Vietnam Pro', sons-serif;   
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
 }
+
 
 .card-projeto {
     background-color: #593b12;
     color: white;
     border: none;
+    margin-top: 0px;
 }
+
+.row.text-center.align-item-center.justify-content-around {
+    margin-top: 0px; /* Remove espaço extra entre o subtítulo e os cards */
+}
+
 
 .card-projeto img {
     border-top-left-radius: 0.25rem;

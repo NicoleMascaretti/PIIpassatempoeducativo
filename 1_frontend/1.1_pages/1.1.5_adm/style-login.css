@@ -55,13 +55,12 @@ body {
     height: 60px;
 }
 
-#input-senha{
+#senha{
     width: 40px;
     height: 60px;
 }
 
-#input-usuario::placeholder,
-#input-senha::placeholder {
+#input::placeholder {
     color: black;
 }
 
@@ -95,4 +94,39 @@ body {
     height: 100%; /* Garante que o botão ocupe o espaço vertical */
 }
 
+/* Posiciona o ícone dentro do campo de senha */
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 10px;
+    color: #242627;
+    z-index: 10;
+    background-color: transparent; /* Remove fundo */
+    border: none; /* Remove bordas */
+}
 
+.input-group {
+    margin-top: 20px;
+    position: relative;
+    border-radius: 10px; /* Mantém a borda arredondada */
+    overflow: hidden; /* Garante que o ícone siga a borda do campo */
+}
+
+.input-group input {
+    border-radius: 10px; /* Garante bordas arredondadas no campo */
+    padding-right: 45px; /* Espaço para o ícone */
+    border: 0px solid #d1d5db;
+}
+
+#toggle-senha {
+    background: none; /* Remove o fundo do botão */
+    border: none; /* Remove borda */
+    font-size: 18px; /* Tamanho do ícone */
+}
+
+.toggle-password:hover {
+    color: #46B910; /* Muda a cor ao passar o mouse */
+}
