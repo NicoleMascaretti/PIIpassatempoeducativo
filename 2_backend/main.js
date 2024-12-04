@@ -1,21 +1,18 @@
 // REST API
 
-require("dotenv").config()
+require("dotenv").config();
 const cors = require('cors')
 const express = require ('express')
-const uniqueValidator = require('mongoose-unique-validator')
+// const uniqueValidator = require('mongoose-unique-validator')
 const app = express()
 const mongoose = require('mongoose')
-const bcrypt = require('bcrypt')
 app.use(express.json())
 app.use(cors())
-
-// APP ONLINE
 
 app.listen(3000, () => {
         try {
             db_connect()
-            console.log("express app running at port 3000")
+            console.log("App running")
         } catch (error) {
             console.log("ERRO: ", error)
         }
@@ -31,45 +28,22 @@ async function db_connect () {
     mongoose.connect(connect_string)
 }
 
-// SCHEMAS
-
 // schema usuarios
 const userSchema = mongoose.Schema({
     login: {type: String, required: true, unique: true},
-    password: {type: String, required: true}
+    password: {type: String, required: true},
+    salt: {type: String, required: true}
 })
-userSchema.plugin(uniqueValidator)
-// criando modelo Usuario
-const Usuario = mongoose.model("Usuario", userSchema)
+// userSchema.plugin(uniqueValidator)
 
-// POST METODOS
+// criando modelo
+const user = mongoose.model("user", userSchema)
 
 // post para registro de usuario
 app.post('/signup', async (req,res)=> {
-    try {
-        const login = req.body.login
-        const password = req.body.password
-        console.log({
-            login,
-            password
-        })
-        const criptografada = await bcrypt.hash(password, 10)
-        const usuario = new Usuario({
-            login: login,
-            password: criptografada
-        })
-        const respMongo = await usuario.save()
-        console.log(respMongo)
-        res.end()
-    } catch (err) {
-        console.log("Error during signup: ", err)
-        return res.status(500).send({mensagem: 'Erro de cadastro'})
-    }
-})
-
-app.post('/login', async (req,res)=> {
     const login = req.body.login
     const password = req.body.password
+<<<<<<< HEAD
 
     const userValido = await Usuario.findOne({login: req.body.login})
     
@@ -87,5 +61,12 @@ app.post('/login', async (req,res)=> {
     if (senhaValida===true) {
         return res.status(200).json({mensagem: "Login Completo"})
     }
+
+    const usuario = new Usuario({
+        login: login,
+        password: password
+    })
+    const respMongo = await usuario.save()
+    console.log(respMongo)
     res.end()
 })

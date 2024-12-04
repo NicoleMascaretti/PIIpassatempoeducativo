@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 
 <head>
   <title>Sobre</title>
   <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aoboshi One">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -21,54 +25,54 @@
   <nav class="navbar navbar-expand-lg py-1 py-lg-0 shadow-sm">
     <div class="container px-0">
 
-        <!-- Logo -->
-        <img src="/1_frontend/1.2_assets/1.2.1_logos/logo.png" class="logo me-5" alt="logo">
+      <!-- Logo -->
+      <img src="/1_frontend/1.2_assets/1.2.1_logos/logo.png" class="logo me-5" alt="logo">
 
-        <!-- Botão para abrir o menu -->
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#top-navbar" aria-controls="top-navbar">
-            <i class="bi bi-list"></i>
+      <!-- Botão para abrir o menu -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#top-navbar"
+        aria-controls="top-navbar">
+        <i class="bi bi-list"></i>
+      </button>
+
+      <!-- Menu -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="top-navbar" aria-labelledby="top-navbarLabel">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#top-navbar"
+          aria-controls="top-navbar">
+          <div class="d-flex justify-content-between p-3">
+            <img src="/1_frontend/1.2_assets/1.2.1_logos/logo.png" class="logo" alt="logo">
+            <i class="bi bi-x-circle"></i>
+          </div>
         </button>
 
-        <!-- Menu -->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="top-navbar" aria-labelledby="top-navbarLabel">
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#top-navbar" aria-controls="top-navbar">
-                <div class="d-flex justify-content-between p-3">
-                    <img src="/1_frontend/1.2_assets/1.2.1_logos/logo.png" class="logo" alt="logo">
-                    <i class="bi bi-x-circle"></i>
-                </div>
-            </button>
+        <!-- Links -->
+        <ul class="navbar-nav ms-lg-auto p-4 p-lg-0 d-flex w-100 justify-content-between">
+          <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+            <a href="/1_frontend/1.1_pages/1.1.1_home/index.html" class="nav-link py-2">Início</a>
+          </li>
+          <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+            <a href="/1_frontend/1.1_pages/1.1.4_servicos/servicos.html" class="nav-link py-2">Projetos</a>
+          </li>
+          <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+            <a href="/1_frontend/1.1_pages/1.1.8_eventos/index.html" class="nav-link py-2">Eventos</a>
+          </li>
+          <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+            <a href="/1_frontend/1.1_pages/1.1.7_galeria/index.html" class="nav-link py-2">Galeria</a>
+          </li>
+          <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+            <a href="/1_frontend/1.1_pages/1.1.2_sobre/index.html" class="nav-link py-2">Sobre Nós</a>
+          </li>
+          <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+            <a href="/1_frontend/1.1_pages/1.1.6_contato/index.html" class="nav-link py-2">Contato</a>
+          </li>
+          <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+            <a href="/1_frontend/1.1_pages/1.1.5_adm/login.html" class="nav-link py-2 px-2" id="botao-entrar">Entrar</a>
+          </li>
+        </ul>
 
-            <!-- Links -->
-            <ul class="navbar-nav ms-lg-auto p-4 p-lg-0 d-flex w-100 justify-content-between">
-                <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
-                    <a href="/1_frontend/1.1_pages/1.1.1_home/index.html" class="nav-link py-2">Início</a>
-                </li>
-                <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
-                    <a href="/1_frontend/1.1_pages/1.1.4_servicos/servicos.html" class="nav-link py-2">Projetos</a>
-                </li>
-                <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
-                  <a href="/1_frontend/1.1_pages/1.1.8_eventos/index.html" class="nav-link py-2">Eventos</a>
-                </li>
-                <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
-                    <a href="/1_frontend/1.1_pages/1.1.7_galeria/index.html" class="nav-link py-2">Galeria</a>
-                </li>
-                <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
-                    <a href="/1_frontend/1.1_pages/1.1.2_sobre/index.html" class="nav-link py-2">Sobre Nós</a>
-                </li>
-                <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
-                    <a href="/1_frontend/1.1_pages/1.1.6_contato/index.html" class="nav-link py-2">Contato</a>
-                </li>
-                <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
-                    <a href="/1_frontend/1.1_pages/1.1.5_adm/login.html" class="nav-link py-2 px-2" id="botao-entrar">Entrar</a>
-                </li>
-            </ul>
-
-        </div>
+      </div>
 
     </div>
-</nav>
+  </nav>
 
 
   <!-- Navbar anterior -->
@@ -108,7 +112,7 @@
         <div class="col-md-6 text-start">
           <p class="missao">"Nossa missão é impactar positivamente o aprendizado e o conhecimento"</p>
         </div>
-        <div class="col-md-6 text-end align-right my-2 my-lg-5">
+        <div class="col-md-6 my-2 my-lg-5" id="container-foto-empresa">
           <img id="foto-empresa" src="/1_frontend/1.2_assets/1.2.2_geral/Imagemhome.png" alt="foto">
         </div>
       </div>
@@ -122,7 +126,11 @@
         <p>A Passatempo Educativo é uma organização não governamental, sem fins lucrativos, que desenvolve projetos na
           área educacional, cultural, esportiva, ações de preservação ambiental e desenvolvimento do turismo
           sustentável.
-          A Passatempo Eventos é composta por profissionais qualificados e dedicados. Essa diversidade de conhecimentos e habilidades nos permite oferecer um atendimento personalizado e eficiente. Além disso, a constante troca de experiências e a colaboração entre os membros da equipe enriquecem nosso ambiente de trabalho, garantindo um ambiente acolhedor e propício ao aprendizado. Muitos profissionais fizeram parte de um curso Recreatur que oferecemos em São Paulo, incentivando a liderança nos jovens e expandindo suas perspectivas de trabalho.
+          A Passatempo Eventos é composta por profissionais qualificados e dedicados. Essa diversidade de conhecimentos
+          e habilidades nos permite oferecer um atendimento personalizado e eficiente. Além disso, a constante troca de
+          experiências e a colaboração entre os membros da equipe enriquecem nosso ambiente de trabalho, garantindo um
+          ambiente acolhedor e propício ao aprendizado. Muitos profissionais fizeram parte de um curso Recreatur que
+          oferecemos em São Paulo, incentivando a liderança nos jovens e expandindo suas perspectivas de trabalho.
 
         </p>
         <p>
@@ -138,9 +146,17 @@
     <div id="historia" class="container-fluid p-3 p-lg-5">
       <div class="row">
         <h2>História</h2>
-        <p> A Passatempo Educativo é uma organização não governamental, sem fins lucrativos, que desenvolve projetos na área educacional, cultural, esportiva, ações de preservação ambiental e desenvolvimento do turismo sustentável. Reconhecida pelo Ministério da Justiça como OSCIP – Organização Social Civil de Interesse Público sob nº 08071005566.
-          Atuando há 23 anos na área da educação, nossos projetos têm como objetivos dar continuidade no processo ensino-aprendizagem através de situações práticas com atividades nas escolas, empresas, excursões, estudos do meio, visitas monitoradas, oficinas, workshops, palestras, jogos e gincanas dirigidos, projetos de incentivo à leitura e suporte didático para pais e professores além de elaboração de material pedagógico complementar.
-          Reinventar os processos educativos e descobrir nosso importante papel na sociedade, através dos projetos Eletivas Novo Ensino Médio, Reforço Interativo, Livros em Ação, STEAM, Robótica nas Escolas entre outros, que tem impactado a educação de milhares de crianças
+        <p> A Passatempo Educativo é uma organização não governamental, sem fins lucrativos, que desenvolve projetos na
+          área educacional, cultural, esportiva, ações de preservação ambiental e desenvolvimento do turismo
+          sustentável. Reconhecida pelo Ministério da Justiça como OSCIP – Organização Social Civil de Interesse Público
+          sob nº 08071005566.
+          Atuando há 23 anos na área da educação, nossos projetos têm como objetivos dar continuidade no processo
+          ensino-aprendizagem através de situações práticas com atividades nas escolas, empresas, excursões, estudos do
+          meio, visitas monitoradas, oficinas, workshops, palestras, jogos e gincanas dirigidos, projetos de incentivo à
+          leitura e suporte didático para pais e professores além de elaboração de material pedagógico complementar.
+          Reinventar os processos educativos e descobrir nosso importante papel na sociedade, através dos projetos
+          Eletivas Novo Ensino Médio, Reforço Interativo, Livros em Ação, STEAM, Robótica nas Escolas entre outros, que
+          tem impactado a educação de milhares de crianças
         </p>
       </div>
     </div>
@@ -149,24 +165,30 @@
     <div id="reconhecimentos" class="container-fluid p-3 p-lg-5">
       <div class="row">
         <h2>Reconhecimentos</h2>
-        <p>O CAF International e o Instituto Doar são os maiores certificadores de organizações do 3ºsetor. Pouquíssimas OSC possuem tais títulos.       
-          A Passatempo Educativo  foi avaliada e aprovada na análise de 5 pilares : Financeiro, Jurídico, Gestão e Governança, Potencial de Impacto e Comunicação/Transparência.
-          O Prêmio Melhores ONGs tem como missão reconhecer e divulgar as ONGs do Brasil que mais se destacam anualmente pela sua excelência em gestão, governança, sustentabilidade financeira e transparência.  
-          O Prêmio Melhores ONGs é realizado pelo Instituto O  Mundo que Queremos, pelo Instituto Doar e pelo Ambev VOA, com apoio de pesquisadores da Fundação Getúlio Vargas (FGV), do Instituto Humanize e da Fundação Toyota do Brasil...
+        <p>O CAF International e o Instituto Doar são os maiores certificadores de organizações do 3ºsetor. Pouquíssimas
+          OSC possuem tais títulos.
+          A Passatempo Educativo foi avaliada e aprovada na análise de 5 pilares : Financeiro, Jurídico, Gestão e
+          Governança, Potencial de Impacto e Comunicação/Transparência.
+          O Prêmio Melhores ONGs tem como missão reconhecer e divulgar as ONGs do Brasil que mais se destacam anualmente
+          pela sua excelência em gestão, governança, sustentabilidade financeira e transparência.
+          O Prêmio Melhores ONGs é realizado pelo Instituto O Mundo que Queremos, pelo Instituto Doar e pelo Ambev VOA,
+          com apoio de pesquisadores da Fundação Getúlio Vargas (FGV), do Instituto Humanize e da Fundação Toyota do
+          Brasil...
         </p>
         <p>Estamos entre as 100 melhores ONGs do Brasil! Além disso temos os seguintes reconhecimentos:</p>
         <p>- Semifinalista do Prêmio Empreendedor Social
           Folha de SP 2021</p>
-        <p>- Prêmio Itau Unicef   
-          9ª Edição  Semifinalista Nacional e Finalista Regional 
-        dentre 2922 projetos
+        <p>- Prêmio Itau Unicef
+          9ª Edição Semifinalista Nacional e Finalista Regional
+          dentre 2922 projetos
         </p>
         <p>- Prêmio Albertina Brasil Ministério da Cultura - Finalista - Projeto Cultura Acessível
         </p>
-        <p>- Prêmio Generosidade - Revista Época 2008     Finalista Nacional 
+        <p>- Prêmio Generosidade - Revista Época 2008 Finalista Nacional
           10 melhores histórias de solidariedade
         </p>
-        <p>- Programa AID 2014/2015 Embaixada da Austrália Projeto Livros em Ação entre os 10 escolhidos de 700 inscritos e em 
+        <p>- Programa AID 2014/2015 Embaixada da Austrália Projeto Livros em Ação entre os 10 escolhidos de 700
+          inscritos e em
           2020/2021 - Projeto Reforço Interativo.
         </p>
       </div>
@@ -174,24 +196,25 @@
   </main>
   <style>
     .social-icon {
-        width: 35px; 
-        height: 35px;
+      width: 35px;
+      height: 35px;
     }
   </style>
 
   <footer class="container-fluid" id="rodap">
-      <!-- Rodapé -->
-      <div class="row justify-content-between align-items-center p-3">
-          <div class="col-6 text-start">
-              <p class="texto-rodape mb-0">&copy; 2024 <a href="https://passatempoeducativo.org.br">passatempoeducativo.org.br</a></p>
-          </div>
-          <!-- Redes sociais -->
-          <div class="col-6 text-end">
-              <img src="/1_frontend/1.2_assets/1.2.1_logos/facebook.png" alt="Facebook" class="social-icon me-2">
-              <img src="/1_frontend/1.2_assets/1.2.1_logos/Instagram.png" alt="Instagram" class="social-icon me-2">
-              <img src="/1_frontend/1.2_assets/1.2.1_logos/whatsapp.png" alt="WhatsApp" class="social-icon">
-          </div>
+    <!-- Rodapé -->
+    <div class="row justify-content-between align-items-center p-3">
+      <div class="col-6 text-start">
+        <p class="texto-rodape mb-0">&copy; 2024 <a
+            href="https://passatempoeducativo.org.br">passatempoeducativo.org.br</a></p>
       </div>
+      <!-- Redes sociais -->
+      <div class="col-6 text-end">
+        <img src="/1_frontend/1.2_assets/1.2.1_logos/facebook.png" alt="Facebook" class="social-icon me-2">
+        <img src="/1_frontend/1.2_assets/1.2.1_logos/Instagram.png" alt="Instagram" class="social-icon me-2">
+        <img src="/1_frontend/1.2_assets/1.2.1_logos/whatsapp.png" alt="WhatsApp" class="social-icon">
+      </div>
+    </div>
   </footer>
 </body>
 
