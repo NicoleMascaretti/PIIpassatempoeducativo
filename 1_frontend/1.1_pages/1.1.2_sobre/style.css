@@ -220,6 +220,17 @@ h2 {
 }
 
 #foto-empresa{
-  width: 580px;
-  height: 350px;
+  height: 100%;
+}
+
+@media (max-width: 768px){
+  #container-foto-empresa, .missao{
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px){
+  #container-foto-empresa{
+    text-align: right;
+  }
 }
