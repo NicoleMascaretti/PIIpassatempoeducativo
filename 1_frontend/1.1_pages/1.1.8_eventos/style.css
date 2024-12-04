@@ -187,33 +187,8 @@ nav {
   /* Espaçamento entre os cartões */
 }
 
-.carousel-inner img {
-  border-radius: 10px;
-}
-
 .carousel-container2 {
   margin-top: 35px;
-}
-
-.card1 {
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  max-width: 400px;
-  /* Define a largura máxima */
-  height: 100%;
-  /* Garante altura uniforme */
-  flex-direction: column;
-  /* Alinha itens verticalmente */
-  justify-content: space-between;
-  /* Distribui espaço entre os itens */
-  flex: 0 0 calc(33.333% - 20px);
-  /* Ocupa 1/3 do espaço disponível, menos o gap */
-  margin: 0 10px;
-  /* Adiciona margem lateral uniforme */
-  display: flex;
-  background-color: #FFF;
 }
 
 .card1-body {
@@ -297,6 +272,8 @@ nav {
   margin: 0 10px;
   /* Adiciona margem lateral uniforme */
   display: flex;
+  border: none;
+  background-color: #FFF;
 }
 
 .card img {
@@ -308,6 +285,7 @@ nav {
   /* Garante que a imagem ocupe toda a largura */
   align-items: center;
   align-self: center;
+  background-color: transparent;
 }
 
 .card-img-top {
@@ -326,14 +304,4 @@ nav {
 .social-icon {
     width: 35px;
     height: 35px;
-}
-
-#cartao{
-  border-radius: 15px;
-  border: none;
-  background-color: #FFF;
-}
-
-#cartao1{
-  background-color: #FFF;
 }
