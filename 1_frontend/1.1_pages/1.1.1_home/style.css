@@ -281,6 +281,13 @@ header .menu .col-lg-2 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
 }
 
+@media (max-width: 768px){
+    .carousel-title{
+        margin-top: 30px;
+    }
+    
+}
+
 /* estilizacao dos paragrafos */
 .carousel-text {
     font-size: 1.2rem;
@@ -307,3 +314,51 @@ header .menu .col-lg-2 {
     width: 35px;
     height: 35px;
 }
+  
+/* parte de depoimentos */
+  .testimonials {
+    background: #fff;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .testimonials ul {
+    list-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 0;
+    font-style: italic;
+    font-weight: 500;
+  }
+  
+  .testimonials ul li {
+    display: inline-block;
+    padding: 1rem;
+    position: relative;
+    text-align: center;
+    width: 100vw;
+  }
+  
+  .testimonials ul li p {
+    max-width: 600px;
+    margin: 1rem auto;
+    width: 50%;
+  }
+  
+  .testimonials-control {
+    background-color: #EB6D0B;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .testimonials-control i {
+    cursor: pointer;
+    padding: 1.3rem;
+    color: #000;
+  }
+
+  .testimonials-l{
+    color: #000;
+  }

@@ -1,40 +1,57 @@
-class MobileNavBar {
-    constructor(mobileMenu, navList) {
-        this.mobileMenu = document.querySelector(mobileMenu);
-        this.navList = document.querySelector(navList);
-        this.navLinks = document.querySelectorAll(navLinks);
-        this.activeClass = "active";
+var tLeftButton = $("#testimonials-l");
+var tRightButton = $("#testimonials-r");
 
-        this.handleClick = this.handleClick.bind(this);
-    }
+// Get number of <li> elements in carousel
 
-    handleClick() {
-        console.log(this);
-        this.navList.classList.toggle(this.activeClass);
-    }
+var tItemCount = document.getElementById('testimonials-ul').querySelectorAll('li').length;
 
-    addClickEvent() {
-        this.mobileMenu.addEventListener("click", this.handleClick);
+// Set length based on that
 
-    }
+var tWidth = tItemCount * 100 + "vw";
+$(".testimonials ul").css("width", tWidth);
 
+// Button functionality
 
-    init() {
-        if (this.mobileMenu) {
-            this.addClickEvent();
-        }
-        return this;
+var tPosition = 0;
+console.log(tPosition);
 
-    }
+tRightButton.click(function() {
+  if (tPosition < (tItemCount - 1)) {
+    tPosition++;
+    var m = "-" + (100 * tPosition) + "vw";
+    $(".testimonials ul").animate({
+      "left": m
+    }, 500);
+    greyButton();
+  }
+});
+
+tLeftButton.click(function() {
+  if (tPosition > 0) {
+    tPosition--;
+    var m = "-" + (100 * tPosition) + "vw";
+    $(".testimonials ul").animate({
+      "left": m
+    }, 500);
+    greyButton();
+  }
+});
+
+// Grey out buttons if not useable 
+
+var greyButton = function() {
+  if (tPosition == 0) {
+    tLeftButton.css("opacity", "0.3");
+    tLeftButton.css("cursor", "default");
+  } else if (tPosition == (tItemCount - 1)) {
+    tRightButton.css("opacity", "0.3");
+    tRightButton.css("cursor", "default");
+  } else {
+    tRightButton.css("opacity", "1");
+    tRightButton.css("cursor", "pointer");
+    tLeftButton.css("opacity", "1");
+    tLeftButton.css("cursor", "pointer");
+  }
 }
-const MobileNavBar = new MobileNavBar(
-    ".mobile-menu",
-    ".nav-list",
-    ".nav-list li",
-);
 
-MobileNavBar.navList
-
-$('.carousel').carousel({
-    interval: 2000
-})
+greyButton();
