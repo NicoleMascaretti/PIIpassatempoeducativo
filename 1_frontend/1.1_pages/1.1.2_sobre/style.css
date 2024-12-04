@@ -25,84 +25,84 @@ nav {
 
 /* Inicio style navbar */
 .logo {
-    max-width: 60px;
-    width: 100%;
+  max-width: 60px;
+  width: 100%;
 }
 
 nav {
-    background-color: white;
+  background-color: white;
 }
 
 .nav-link {
-    text-decoration: none;
-    font-family: 'Be Vietnam Pro';
-    line-height: normal;
-    color: black;
-    position: relative;
+  text-decoration: none;
+  font-family: 'Be Vietnam Pro';
+  line-height: normal;
+  color: black;
+  position: relative;
 }
 
 .nav-link:not(#botao-entrar)::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-link:not(#botao-entrar):hover::before {
+  transform: scaleX(1);
+}
+
+@media (max-width: 991px) {
+  .nav-link:not(#botao-entrar)::before {
     content: "";
     position: absolute;
     display: block;
-    width: 100%;
+    width: 20%;
     height: 2px;
     bottom: 0;
     left: 0;
     background-color: #000;
     transform: scaleX(0);
     transition: transform 0.3s ease;
-}
+  }
 
-.nav-link:not(#botao-entrar):hover::before {
+  .nav-link:not(#botao-entrar):hover::before {
     transform: scaleX(1);
-}
-
-@media (max-width: 991px) {
-    .nav-link:not(#botao-entrar)::before {
-        content: "";
-        position: absolute;
-        display: block;
-        width: 20%;
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #000;
-        transform: scaleX(0);
-        transition: transform 0.3s ease;
-    }
-
-    .nav-link:not(#botao-entrar):hover::before {
-        transform: scaleX(1);
-    }
+  }
 }
 
 .navbar-toggler:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .bi-list {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .bi-x-circle {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 #botao-entrar {
-    background-color: #46B910;
-    color: white;
-    border: none;
-    width: 120px;
-    text-align: center;
-    border-radius: 10px;
-    transition: 0.5s;
+  background-color: #46B910;
+  color: white;
+  border: none;
+  width: 120px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.5s;
 }
 
 #botao-entrar:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px green;
-    transition: 0.5s;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px green;
+  transition: 0.5s;
 }
 
 /* CSS Navbar anterior */
@@ -164,9 +164,9 @@ h2 {
   font-family: "Impact", sans-serif;
 }
 
-.quemsomos{
+.quemsomos {
   font-family: 'Caveat', cursive;
-  font-size:  40px;
+  font-size: 40px;
 }
 
 #quem-somos,
@@ -188,13 +188,14 @@ h2 {
 /* estilizacao relacionada ao rodape */
 
 #rodap {
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
-  background: #5C3100; 
-  padding: 10px 20px; /* espacamento interno */
-  color: white; 
-  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #5C3100;
+  padding: 10px 20px;
+  /* espacamento interno */
+  color: white;
+  width: 100%;
 }
 
 .texto-rodape {
@@ -208,7 +209,7 @@ h2 {
   margin: 0;
 }
 
-.texto-rodape a{
+.texto-rodape a {
   color: #FFF;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 17px;
@@ -218,47 +219,50 @@ h2 {
   text-decoration-line: underline;
 }
 
-  .social-icon {
-    font-size: 1.5rem;
-    margin: 0 10px;
-    color: white;
-  }
-
-  @media (max-width: 768px) {
-    #rodap .row {
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .social-icon {
-      margin: 10px 0;
-    }
-  }
+.social-icon {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  color: white;
+}
 
 @media (max-width: 768px) {
-    #rodap .row {
-        flex-direction: column;
-        text-align: center;
-    }
-    .social-icon {
-        margin: 10px 0;
-    }
+  #rodap .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-icon {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #rodap .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-icon {
+    margin: 10px 0;
+  }
 }
 
 /* estilizacao relacionada à foto */
 
-#foto-empresa{
+#foto-empresa {
   height: 100%;
 }
 
-@media (max-width: 768px){
-  #container-foto-empresa, .missao{
+@media (max-width: 768px) {
+
+  #container-foto-empresa,
+  .missao {
     text-align: center;
   }
 }
 
-@media (min-width: 769px){
-  #container-foto-empresa{
+@media (min-width: 769px) {
+  #container-foto-empresa {
     text-align: right;
   }
 }

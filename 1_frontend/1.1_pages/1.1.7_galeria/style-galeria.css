@@ -21,7 +21,7 @@ nav {
     position: relative;
 }
 
-.nav-link:not(#botao-entrar)::before{
+.nav-link:not(#botao-entrar)::before {
     content: "";
     position: absolute;
     display: block;
@@ -33,13 +33,13 @@ nav {
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
-  
-.nav-link:not(#botao-entrar):hover::before{
+
+.nav-link:not(#botao-entrar):hover::before {
     transform: scaleX(1);
 }
 
 @media (max-width: 991px) {
-    .nav-link:not(#botao-entrar)::before{
+    .nav-link:not(#botao-entrar)::before {
         content: "";
         position: absolute;
         display: block;
@@ -51,8 +51,8 @@ nav {
         transform: scaleX(0);
         transition: transform 0.3s ease;
     }
-      
-    .nav-link:not(#botao-entrar):hover::before{
+
+    .nav-link:not(#botao-entrar):hover::before {
         transform: scaleX(1);
     }
 
@@ -70,7 +70,7 @@ nav {
     font-size: 1.5rem;
 }
 
-.botao-entrar{
+.botao-entrar {
     background-color: #68F128;
     border-radius: 0;
     border: none;
@@ -86,14 +86,14 @@ nav {
     border-radius: 10px;
     transition: 0.5s;
 }
-  
+
 #botao-entrar:hover {
     transform: scale(1.1);
     box-shadow: 0 0 15px green;
     transition: 0.5s;
 }
 
-.titulo{
+.titulo {
     font-size: 3.5rem;
     margin-bottom: 10px;
     font-family: "Impact", sans-serif;
@@ -115,16 +115,17 @@ nav {
 /* estilizacao relacionada ao rodape */
 
 #rodap {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    background: #5C3100; 
-    padding: 10px 20px; /* espacamento interno */
-    color: white; 
-    width: 100%; 
-  }
-  
-  .texto-rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #5C3100;
+    padding: 10px 20px;
+    /* espacamento interno */
+    color: white;
+    width: 100%;
+}
+
+.texto-rodape {
     color: #FFF;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 17px;
@@ -133,9 +134,9 @@ nav {
     line-height: normal;
     padding-right: 600px;
     margin: 0;
-  }
-  
-  .texto-rodape a{
+}
+
+.texto-rodape a {
     color: #FFF;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 17px;
@@ -143,31 +144,32 @@ nav {
     font-weight: 600;
     line-height: normal;
     text-decoration-line: underline;
-  }
-  
-    .social-icon {
-      font-size: 1.5rem;
-      margin: 0 10px;
-      color: white;
-    }
-  
-    @media (max-width: 768px) {
-      #rodap .row {
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #rodap .row {
         flex-direction: column;
         text-align: center;
-      }
-  
-      .social-icon {
-        margin: 10px 0;
-      }
     }
-  
-  @media (max-width: 768px) {
-      #rodap .row {
-          flex-direction: column;
-          text-align: center;
-      }
-      .social-icon {
-          margin: 10px 0;
-      }
-  }
+
+    .social-icon {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    #rodap .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icon {
+        margin: 10px 0;
+    }
+}

@@ -16,7 +16,7 @@ nav {
   position: relative;
 }
 
-.nav-link:not(#botao-entrar)::before{
+.nav-link:not(#botao-entrar)::before {
   content: "";
   position: absolute;
   display: block;
@@ -29,26 +29,26 @@ nav {
   transition: transform 0.3s ease;
 }
 
-.nav-link:not(#botao-entrar):hover::before{
+.nav-link:not(#botao-entrar):hover::before {
   transform: scaleX(1);
 }
 
 @media (max-width: 991px) {
-  .nav-link:not(#botao-entrar)::before{
-      content: "";
-      position: absolute;
-      display: block;
-      width: 20%;
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      background-color: #000;
-      transform: scaleX(0);
-      transition: transform 0.3s ease;
+  .nav-link:not(#botao-entrar)::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 20%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
   }
-    
-  .nav-link:not(#botao-entrar):hover::before{
-      transform: scaleX(1);
+
+  .nav-link:not(#botao-entrar):hover::before {
+    transform: scaleX(1);
   }
 
 }
@@ -65,7 +65,7 @@ nav {
   font-size: 1.5rem;
 }
 
-.botao-entrar{
+.botao-entrar {
   background-color: #68F128;
   border-radius: 0;
   border: none;
@@ -87,18 +87,20 @@ nav {
   box-shadow: 0 0 15px green;
   transition: 0.5s;
 }
+
 /* fim da estilizacao relacionada a navbar */
 
 /* estilizacao relacionada ao rodape */
 
 #rodap {
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
-  background: #5C3100; 
-  padding: 10px 20px; /* espacamento interno */
-  color: white; 
-  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #5C3100;
+  padding: 10px 20px;
+  /* espacamento interno */
+  color: white;
+  width: 100%;
 }
 
 .texto-rodape {
@@ -112,7 +114,7 @@ nav {
   margin: 0;
 }
 
-.texto-rodape a{
+.texto-rodape a {
   color: #FFF;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 17px;
@@ -141,11 +143,12 @@ nav {
 
 @media (max-width: 768px) {
   #rodap .row {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
+
   .social-icon {
-      margin: 10px 0;
+    margin: 10px 0;
   }
 }
 
@@ -153,60 +156,69 @@ nav {
 
 /* estilizacao parte central */
 
-  .titulosociais{
-    justify-content: center;
-    display: flex;
-    font-size: 3.5rem;
-    margin-bottom: 10px;
-    font-family: "Impact", sans-serif;
-    letter-spacing: 0px;
-    color: #FFF;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
-}
-  
-  .subtitulotitulosociais{
-    font-size: 1.2rem; /* tam menor (usei rem pq é mais flexivel e escalavel) */
-    color: #FFF; 
-    line-height: 1.6; /* espacamento entre linhas */
-    margin-bottom: 20px; /* espacamento abaixo */
-    padding: 0 10px; /* espaco interno nas laterais */
-    margin-left: 50px;
-    margin-right: 50px;
+.titulosociais {
+  justify-content: center;
+  display: flex;
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  font-family: "Impact", sans-serif;
+  letter-spacing: 0px;
+  color: #FFF;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
 }
 
-  .titulocorp{
-    justify-content: center;
-    display: flex;
-    font-size: 3.5rem;
-    margin-bottom: 10px;
-    font-family: "Impact", sans-serif;
-    letter-spacing: 0px;
-    color: #FFF;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
-}
-  
-  .subtitulotitulocorp{
-    font-size: 1.2rem; /* tam menor (usei rem pq é mais flexivel e escalavel) */
-    color: #FFF; 
-    line-height: 1.6; /* espacamento entre linhas */
-    margin-bottom: 20px; /* espacamento abaixo */
-    padding: 0 10px; /* espaco interno nas laterais */
-    margin-left: 50px;
-    margin-right: 50px;
+.subtitulotitulosociais {
+  font-size: 1.2rem;
+  /* tam menor (usei rem pq é mais flexivel e escalavel) */
+  color: #FFF;
+  line-height: 1.6;
+  /* espacamento entre linhas */
+  margin-bottom: 20px;
+  /* espacamento abaixo */
+  padding: 0 10px;
+  /* espaco interno nas laterais */
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
-  .carousel-item .row {
-    display: flex;
-    justify-content: center;
-    gap: 15px; /* Espaçamento entre os cartões */
+.titulocorp {
+  justify-content: center;
+  display: flex;
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  font-family: "Impact", sans-serif;
+  letter-spacing: 0px;
+  color: #FFF;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
 }
 
-  .carousel-inner img {
-      border-radius: 10px;
+.subtitulotitulocorp {
+  font-size: 1.2rem;
+  /* tam menor (usei rem pq é mais flexivel e escalavel) */
+  color: #FFF;
+  line-height: 1.6;
+  /* espacamento entre linhas */
+  margin-bottom: 20px;
+  /* espacamento abaixo */
+  padding: 0 10px;
+  /* espaco interno nas laterais */
+  margin-left: 50px;
+  margin-right: 50px;
 }
-  
-  .carousel-container2{
-    margin-top: 35px;
+
+.carousel-item .row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  /* Espaçamento entre os cartões */
+}
+
+.carousel-inner img {
+  border-radius: 10px;
+}
+
+.carousel-container2 {
+  margin-top: 35px;
 }
 
 .card1 {
@@ -214,21 +226,28 @@ nav {
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  max-width: 400px; /* Define a largura máxima */
-  height: 100%; /* Garante altura uniforme */
-  flex-direction: column; /* Alinha itens verticalmente */
-  justify-content: space-between; /* Distribui espaço entre os itens */
-  flex: 0 0 calc(33.333% - 20px); /* Ocupa 1/3 do espaço disponível, menos o gap */
-  margin: 0 10px; /* Adiciona margem lateral uniforme */
+  max-width: 400px;
+  /* Define a largura máxima */
+  height: 100%;
+  /* Garante altura uniforme */
+  flex-direction: column;
+  /* Alinha itens verticalmente */
+  justify-content: space-between;
+  /* Distribui espaço entre os itens */
+  flex: 0 0 calc(33.333% - 20px);
+  /* Ocupa 1/3 do espaço disponível, menos o gap */
+  margin: 0 10px;
+  /* Adiciona margem lateral uniforme */
   display: flex;
   background-color: #FFF;
 }
-  
+
 .card1-body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%; /* Força o ajuste completo dentro do cartão */
+  height: 100%;
+  /* Força o ajuste completo dentro do cartão */
 }
 
 .card1-title {
@@ -241,68 +260,83 @@ nav {
 .card1-text {
   font-size: 0.9rem;
   line-height: 1.4;
-  flex-grow: 1; /* Expande para ocupar espaço disponível */
+  flex-grow: 1;
+  /* Expande para ocupar espaço disponível */
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .card1 img {
-  height: 280px; /* Define altura fixa para as imagens */
-  object-fit: cover; /* Mantém proporções sem distorcer */
-  width: 100%; /* Garante que a imagem ocupe toda a largura */
+  height: 280px;
+  /* Define altura fixa para as imagens */
+  object-fit: cover;
+  /* Mantém proporções sem distorcer */
+  width: 100%;
+  /* Garante que a imagem ocupe toda a largura */
   align-items: center;
   align-self: center;
 }
 
-.card1-img-top{
-align-items: center;
-align-self: center;
-height: auto;
+.card1-img-top {
+  align-items: center;
+  align-self: center;
+  height: auto;
 }
 
 .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%; /* Força o ajuste completo dentro do cartão */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  /* Força o ajuste completo dentro do cartão */
 }
 
 .card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .card-text {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    margin-bottom: 10px;
-    flex-grow: 1; /* Expande para ocupar espaço disponível */
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  flex-grow: 1;
+  /* Expande para ocupar espaço disponível */
 }
 
 .card {
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 400px; /* Define a largura máxima */
-    height: 100%; /* Garante altura uniforme */
-    flex-direction: column; /* Alinha itens verticalmente */
-    justify-content: space-between; /* Distribui espaço entre os itens */
-    flex: 0 0 calc(33.333% - 20px); /* Ocupa 1/3 do espaço disponível, menos o gap */
-    margin: 0 10px; /* Adiciona margem lateral uniforme */
-    display: flex;
-}
-  
-.card img {
-    height: 280px; /* Define altura fixa para as imagens */
-    object-fit: cover; /* Mantém proporções sem distorcer */
-    width: 100%; /* Garante que a imagem ocupe toda a largura */
-    align-items: center;
-    align-self: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  /* Define a largura máxima */
+  height: 100%;
+  /* Garante altura uniforme */
+  flex-direction: column;
+  /* Alinha itens verticalmente */
+  justify-content: space-between;
+  /* Distribui espaço entre os itens */
+  flex: 0 0 calc(33.333% - 20px);
+  /* Ocupa 1/3 do espaço disponível, menos o gap */
+  margin: 0 10px;
+  /* Adiciona margem lateral uniforme */
+  display: flex;
 }
 
-.card-img-top{
+.card img {
+  height: 280px;
+  /* Define altura fixa para as imagens */
+  object-fit: cover;
+  /* Mantém proporções sem distorcer */
+  width: 100%;
+  /* Garante que a imagem ocupe toda a largura */
+  align-items: center;
+  align-self: center;
+}
+
+.card-img-top {
   align-items: center;
   align-self: center;
   height: auto;
@@ -311,7 +345,6 @@ height: auto;
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: 5%; /* Reduz a largura das áreas clicáveis das setas */
+  width: 5%;
+  /* Reduz a largura das áreas clicáveis das setas */
 }
-
-  

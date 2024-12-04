@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-body{
-    background-color: #FF7900; 
+body {
+    background-color: #FF7900;
 }
 
 /* Inicio style navbar */
@@ -58,7 +58,7 @@ nav {
     font-size: 1.5rem;
 }
 
-.botao-entrar{
+.botao-entrar {
     background-color: #46B910;
     border-radius: 0;
     border: none;
@@ -74,16 +74,17 @@ nav {
     border-radius: 10px;
     transition: 0.5s;
 }
-  
+
 #botao-entrar:hover {
     transform: scale(1.1);
     box-shadow: 0 0 15px green;
     transition: 0.5s;
 }
+
 /* Fim style navbar */
 
 /* inicio style form contato */
-.titulo{
+.titulo {
     font-size: 3.5rem;
     margin-top: 25px;
     margin-bottom: 10px;
@@ -93,38 +94,40 @@ nav {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
 }
 
-#form{
+#form {
     border-radius: 0;
     border: solid 2px #D9D9D9;
     color: black;
 }
 
-#form::placeholder{
+#form::placeholder {
     color: black;
 }
 
-.botao-enviar{
+.botao-enviar {
     width: 250px;
     color: white;
     background-color: #46B910;
     font-size: 20px;
     border: none;
 }
+
 /* Fim style form contato */
 
 /* estilizacao relacionada ao rodape */
 
 #rodap {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    background: #5C3100; 
-    padding: 10px 20px; /* espacamento interno */
-    color: white; 
-    width: 100%; 
-  }
-  
-  .texto-rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #5C3100;
+    padding: 10px 20px;
+    /* espacamento interno */
+    color: white;
+    width: 100%;
+}
+
+.texto-rodape {
     color: #FFF;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 17px;
@@ -133,9 +136,9 @@ nav {
     line-height: normal;
     padding-right: 600px;
     margin: 0;
-  }
-  
-  .texto-rodape a{
+}
+
+.texto-rodape a {
     color: #FFF;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 17px;
@@ -143,32 +146,32 @@ nav {
     font-weight: 600;
     line-height: normal;
     text-decoration-line: underline;
-  }
-  
-  .social-icon {
+}
+
+.social-icon {
     font-size: 1.5rem;
     margin: 0 10px;
     color: white;
-  }
-  
-  @media (max-width: 768px) {
-    #rodap .row {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .social-icon {
-      margin: 10px 0;
-    }
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     #rodap .row {
         flex-direction: column;
         text-align: center;
     }
+
     .social-icon {
         margin: 10px 0;
     }
-  }
-  
+}
+
+@media (max-width: 768px) {
+    #rodap .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icon {
+        margin: 10px 0;
+    }
+}

@@ -11,23 +11,23 @@ body {
     align-items: flex-start;
 }
 
-.logo-container{
+.logo-container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     align-self: flex-start;
 }
 
-.logo-left{
+.logo-left {
     margin-left: 0;
 }
 
-.logo-container img{
+.logo-container img {
     width: 80px;
     height: 80px;
 }
 
-#user{
+#user {
     width: 20px;
     height: 20px;
     /* border: 1px solid black; */
@@ -39,7 +39,7 @@ body {
     border: none;
 }
 
-#cadeado{
+#cadeado {
     width: 20px;
     height: 20px;
     border: none;
@@ -50,12 +50,12 @@ body {
     border: none;
 }
 
-#input-usuario{
+#input-usuario {
     width: 40px;
     height: 60px;
 }
 
-#senha{
+#senha {
     width: 40px;
     height: 60px;
 }
@@ -64,17 +64,20 @@ body {
     color: black;
 }
 
-#botao-entrar{
+#botao-entrar {
     display: flex;
-    align-items: center; /* centraliza verticalmente */
-    justify-content: center; /* centraliza horizontalmente */
-    color: #fff; /* cor do texto */
+    align-items: center;
+    /* centraliza verticalmente */
+    justify-content: center;
+    /* centraliza horizontalmente */
+    color: #fff;
+    /* cor do texto */
     font-family: "Libre Franklin", sans-serif;
     font-size: 16px;
     font-weight: 500;
-    background-color: #46B910; 
-    border-radius: 10px; 
-    border: none; 
+    background-color: #46B910;
+    border-radius: 10px;
+    border: none;
     width: 130px;
     height: 40px;
     cursor: pointer;
@@ -88,10 +91,14 @@ body {
 }
 
 .col-sm-12 {
-    display: flex; /* Flexbox no contêiner */
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    height: 100%; /* Garante que o botão ocupe o espaço vertical */
+    display: flex;
+    /* Flexbox no contêiner */
+    align-items: center;
+    /* Centraliza verticalmente */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    height: 100%;
+    /* Garante que o botão ocupe o espaço vertical */
 }
 
 /* Posiciona o ícone dentro do campo de senha */
@@ -104,29 +111,39 @@ body {
     font-size: 10px;
     color: #242627;
     z-index: 10;
-    background-color: transparent; /* Remove fundo */
-    border: none; /* Remove bordas */
+    background-color: transparent;
+    /* Remove fundo */
+    border: none;
+    /* Remove bordas */
 }
 
 .input-group {
     margin-top: 20px;
     position: relative;
-    border-radius: 10px; /* Mantém a borda arredondada */
-    overflow: hidden; /* Garante que o ícone siga a borda do campo */
+    border-radius: 10px;
+    /* Mantém a borda arredondada */
+    overflow: hidden;
+    /* Garante que o ícone siga a borda do campo */
 }
 
 .input-group input {
-    border-radius: 10px; /* Garante bordas arredondadas no campo */
-    padding-right: 45px; /* Espaço para o ícone */
+    border-radius: 10px;
+    /* Garante bordas arredondadas no campo */
+    padding-right: 45px;
+    /* Espaço para o ícone */
     border: 0px solid #d1d5db;
 }
 
 #toggle-senha {
-    background: none; /* Remove o fundo do botão */
-    border: none; /* Remove borda */
-    font-size: 18px; /* Tamanho do ícone */
+    background: none;
+    /* Remove o fundo do botão */
+    border: none;
+    /* Remove borda */
+    font-size: 18px;
+    /* Tamanho do ícone */
 }
 
 .toggle-password:hover {
-    color: #46B910; /* Muda a cor ao passar o mouse */
+    color: #46B910;
+    /* Muda a cor ao passar o mouse */
 }

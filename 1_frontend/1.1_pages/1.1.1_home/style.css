@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -29,7 +29,7 @@ nav {
     position: relative;
 }
 
-.nav-link:not(#botao-entrar)::before{
+.nav-link:not(#botao-entrar)::before {
     content: "";
     position: absolute;
     display: block;
@@ -40,14 +40,14 @@ nav {
     background-color: #000;
     transform: scaleX(0);
     transition: transform 0.3s ease;
-  }
-  
-  .nav-link:not(#botao-entrar):hover::before{
+}
+
+.nav-link:not(#botao-entrar):hover::before {
     transform: scaleX(1);
 }
 
 @media (max-width: 991px) {
-    .nav-link:not(#botao-entrar)::before{
+    .nav-link:not(#botao-entrar)::before {
         content: "";
         position: absolute;
         display: block;
@@ -58,9 +58,9 @@ nav {
         background-color: #000;
         transform: scaleX(0);
         transition: transform 0.3s ease;
-      }
-      
-      .nav-link:not(#botao-entrar):hover::before{
+    }
+
+    .nav-link:not(#botao-entrar):hover::before {
         transform: scaleX(1);
     }
 
@@ -100,7 +100,7 @@ nav {
     border-radius: 10px;
     transition: 0.5s;
 }
-  
+
 #botao-entrar:hover {
     transform: scale(1.1);
     box-shadow: 0 0 15px green;
@@ -115,7 +115,7 @@ nav {
         color: rgb(0, 0, 0);
         position: relative;
     }
-      
+
     #botao-entrar:hover {
         transform: none;
         box-shadow: none;
@@ -136,7 +136,7 @@ nav {
     padding-top: 12px;
 } */
 
- /* componentes "rotas" da navbar */
+/* componentes "rotas" da navbar */
 /* .link {
     text-decoration: none;
     font-family: 'Be Vietnam Pro';
@@ -162,7 +162,7 @@ nav {
     transform: scaleX(1);
   } */
 
- /* botao "entrar" */
+/* botao "entrar" */
 /* #botao-entrar {
     background-color: #46B910;
     color: white;
@@ -183,35 +183,49 @@ header .menu .col-sm-12,
 header .menu .col-md-12,
 header .menu .col-lg-1,
 header .menu .col-lg-2 {
-    display: flex; /* alinha flexbox nas colunas */
-    align-items: center; /* centraliza verticalmente */
-    justify-content: center; /* centraliza horizontalmente */
-    padding: 0; /* remove padding extra */
-    margin: 0; /* remove margens extras */
-    height: 100%; /* garante altura consistente */
+    display: flex;
+    /* alinha flexbox nas colunas */
+    align-items: center;
+    /* centraliza verticalmente */
+    justify-content: center;
+    /* centraliza horizontalmente */
+    padding: 0;
+    /* remove padding extra */
+    margin: 0;
+    /* remove margens extras */
+    height: 100%;
+    /* garante altura consistente */
 }
 
 /* responsividade */
 @media (max-width: 768px) {
     header .menu {
-        flex-wrap: wrap; /* permite quebra de linha */
-        justify-content: center; /* centraliza os itens */
+        flex-wrap: wrap;
+        /* permite quebra de linha */
+        justify-content: center;
+        /* centraliza os itens */
     }
 
     header .menu .links,
     header .menu .atual {
-        font-size: 16px; /* reduz tamanho da fonte */
-        margin: 5px 0; /* adiciona espaçamento */
+        font-size: 16px;
+        /* reduz tamanho da fonte */
+        margin: 5px 0;
+        /* adiciona espaçamento */
     }
 
     header .menu .botao-entrar {
-        font-size: 14px; /* reduz tamanho da fonte */
-        width: 100px; /* ajusta largura */
-        height: 35px; /* ajusta altura */
+        font-size: 14px;
+        /* reduz tamanho da fonte */
+        width: 100px;
+        /* ajusta largura */
+        height: 35px;
+        /* ajusta altura */
     }
 
     header .menu .logo img {
-        height: 60px; /* ajusta tamanho da logo */
+        height: 60px;
+        /* ajusta tamanho da logo */
         width: auto;
     }
 }
@@ -219,16 +233,17 @@ header .menu .col-lg-2 {
 /* estilizacao relacionada ao rodape */
 
 #rodap {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    background: #5C3100; 
-    padding: 10px 20px; /* espacamento interno */
-    color: white; 
-    width: 100%; 
-  }
-  
-  .texto-rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #5C3100;
+    padding: 10px 20px;
+    /* espacamento interno */
+    color: white;
+    width: 100%;
+}
+
+.texto-rodape {
     color: #FFF;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 17px;
@@ -237,9 +252,9 @@ header .menu .col-lg-2 {
     line-height: normal;
     padding-right: 600px;
     margin: 0;
-  }
-  
-  .texto-rodape a{
+}
+
+.texto-rodape a {
     color: #FFF;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 17px;
@@ -247,33 +262,32 @@ header .menu .col-lg-2 {
     font-weight: 600;
     line-height: normal;
     text-decoration-line: underline;
-  }
-  
-    .social-icon {
-      font-size: 1.5rem;
-      margin: 0 10px;
-      color: white;
-    }
-  
-    @media (max-width: 768px) {
-      #rodap .row {
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #rodap .row {
         flex-direction: column;
         text-align: center;
-      }
-  
-      .social-icon {
-        margin: 10px 0;
-      }
     }
-  
-  @media (max-width: 768px) {
-      #rodap .row {
-          flex-direction: column;
-          text-align: center;
-      }
-      .social-icon {
-          margin: 10px 0;
-      }
-  }
 
+    .social-icon {
+        margin: 10px 0;
+    }
+}
 
+@media (max-width: 768px) {
+    #rodap .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icon {
+        margin: 10px 0;
+    }
+}

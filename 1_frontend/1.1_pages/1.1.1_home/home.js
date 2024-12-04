@@ -1,5 +1,5 @@
 class MobileNavBar {
-    constructor (mobileMenu,navList){
+    constructor(mobileMenu, navList) {
         this.mobileMenu = document.querySelector(mobileMenu);
         this.navList = document.querySelector(navList);
         this.navLinks = document.querySelectorAll(navLinks);
@@ -24,7 +24,7 @@ class MobileNavBar {
             this.addClickEvent();
         }
         return this;
-        
+
     }
 }
 const MobileNavBar = new MobileNavBar(
@@ -37,4 +37,4 @@ MobileNavBar.navList
 
 $('.carousel').carousel({
     interval: 2000
-  })
+})

@@ -2,237 +2,317 @@
 <html lang="pt">
 
 <head>
-  <title>Eventos</title>
-  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aoboshi One">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Eventos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aoboshi One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
     <!-- Container da navbar -->
     <nav class="navbar navbar-expand-lg py-1 py-lg-0 shadow-sm bg-light">
-      <div class="container px-0">
+        <div class="container px-0">
 
-          <!-- Logo -->
-          <img src="/1_frontend/1.2_assets/1.2.1_logos/logo.png" class="logo me-5" alt="">
+            <!-- Logo -->
+            <img src="/1_frontend/1.2_assets/1.2.1_logos/logo.png" class="logo me-5" alt="">
 
-          <!-- Botão para abrir o menu -->
-          <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
-              data-bs-target="#top-navbar" aria-controls="top-navbar">
-              <i class="bi bi-list"></i>
-          </button>
+            <!-- Botão para abrir o menu -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#top-navbar" aria-controls="top-navbar">
+                <i class="bi bi-list"></i>
+            </button>
 
-          <!-- Menu -->
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="top-navbar" aria-labelledby="top-navbarLabel">
-              <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
-                  data-bs-target="#top-navbar" aria-controls="top-navbar">
-                  <div class="d-flex justify-content-between p-3">
-                      <img src="/1_frontend/1.2_assets/1.2.1_logos/logo.png" class="logo" alt="">
-                      <i class="bi bi-x-circle"></i>
-                  </div>
-              </button>
+            <!-- Menu -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="top-navbar" aria-labelledby="top-navbarLabel">
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#top-navbar" aria-controls="top-navbar">
+                    <div class="d-flex justify-content-between p-3">
+                        <img src="/1_frontend/1.2_assets/1.2.1_logos/logo.png" class="logo" alt="">
+                        <i class="bi bi-x-circle"></i>
+                    </div>
+                </button>
 
-              <!-- Links -->
-              <ul class="navbar-nav ms-lg-auto p-4 p-lg-0 d-flex w-100 justify-content-between">
-                  <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
-                      <a href="/1_frontend/1.1_pages/1.1.1_home/index.html" class="nav-link py-2">Início</a>
-                  </li>
-                  <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
-                      <a href="/1_frontend/1.1_pages/1.1.4_servicos/servicos.html" class="nav-link py-2">Projetos</a>
-                  </li>
-                  <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
-                      <a href="/1_frontend/1.1_pages/1.1.8_eventos/index.html" class="nav-link py-2">Eventos</a>
-                  </li>
-                  <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
-                      <a href="/1_frontend/1.1_pages/1.1.7_galeria/index.html" class="nav-link py-2">Galeria</a>
-                  </li>
-                  <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
-                      <a href="/1_frontend/1.1_pages/1.1.2_sobre/index.html" class="nav-link py-2">Sobre Nós</a>
-                  </li>
-                  <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
-                      <a href="/1_frontend/1.1_pages/1.1.6_contato/index.html" class="nav-link py-2">Contato</a>
-                  </li>
-                  <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
-                      <a href="/1_frontend/1.1_pages/1.1.5_adm/login.html" class="nav-link py-2 px-2" id="botao-entrar">Entrar</a>
-                  </li>
-              </ul>
+                <!-- Links -->
+                <ul class="navbar-nav ms-lg-auto p-4 p-lg-0 d-flex w-100 justify-content-between">
+                    <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+                        <a href="/1_frontend/1.1_pages/1.1.1_home/index.html" class="nav-link py-2">Início</a>
+                    </li>
+                    <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+                        <a href="/1_frontend/1.1_pages/1.1.4_servicos/servicos.html" class="nav-link py-2">Projetos</a>
+                    </li>
+                    <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+                        <a href="/1_frontend/1.1_pages/1.1.8_eventos/index.html" class="nav-link py-2">Eventos</a>
+                    </li>
+                    <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+                        <a href="/1_frontend/1.1_pages/1.1.7_galeria/index.html" class="nav-link py-2">Galeria</a>
+                    </li>
+                    <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+                        <a href="/1_frontend/1.1_pages/1.1.2_sobre/index.html" class="nav-link py-2">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+                        <a href="/1_frontend/1.1_pages/1.1.6_contato/index.html" class="nav-link py-2">Contato</a>
+                    </li>
+                    <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+                        <a href="/1_frontend/1.1_pages/1.1.5_adm/login.html" class="nav-link py-2 px-2"
+                            id="botao-entrar">Entrar</a>
+                    </li>
+                </ul>
 
-          </div>
-      </div>
+            </div>
+        </div>
     </nav>
 
     <!-- Conteudo central -->
     <div class="container-fluid py-5" style="background-color: #ff7600;">
-    <!-- Primeiro carrossel -->
-    <div class="carousel-container1">
-        <h3 class="titulosociais">Eventos sociais</h3>
-        <p class="subtitulotitulosociais">Nos eventos sociais do Passatempo Educativo, nos dedicamos a criar experiências únicas e inesquecíveis para todas as idades. Personalizamos cada detalhe, desde jogos e dinâmicas até atividades que promovem diversão e aprendizado. Nas festas temáticas, transformamos aniversários em momentos especiais, repletos de criatividade e alegria. Durante as férias, levamos ao seu condomínio ou clube uma programação diversificada, com atividades que entretêm, educam e ajudam no desenvolvimento social e motor de crianças e adolescentes. Nossa missão é garantir que cada participante se sinta acolhido e envolvido em experiências memoráveis!</p>
-        <div id="esportesCarousel1" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="card">
-                                <img src="/1_frontend/1.2_assets/1.2.3_eventos/Recreacao1.png" class="card-img-top" alt="Esporte 1">
-                                <div class="card-body">
-                                    <h5 class="card-title">Recreação</h5>
-                                    <p class="card-text">Oferecemos serviços de recreação personalizados para todas as idades, com jogos e atividades adaptadas ao público do seu evento. Nossa equipe de recreadores treinados se dedica a criar experiências únicas, garantindo diversão, aprendizado e momentos inesquecíveis para todos os participantes.</p>
+        <!-- Primeiro carrossel -->
+        <div class="carousel-container1">
+            <h3 class="titulosociais">Eventos sociais</h3>
+            <p class="subtitulotitulosociais">Nos eventos sociais do Passatempo Educativo, nos dedicamos a criar
+                experiências únicas e inesquecíveis para todas as idades. Personalizamos cada detalhe, desde jogos e
+                dinâmicas até atividades que promovem diversão e aprendizado. Nas festas temáticas, transformamos
+                aniversários em momentos especiais, repletos de criatividade e alegria. Durante as férias, levamos ao
+                seu condomínio ou clube uma programação diversificada, com atividades que entretêm, educam e ajudam no
+                desenvolvimento social e motor de crianças e adolescentes. Nossa missão é garantir que cada participante
+                se sinta acolhido e envolvido em experiências memoráveis!</p>
+            <div id="esportesCarousel1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="card">
+                                    <img src="/1_frontend/1.2_assets/1.2.3_eventos/Recreacao1.png" class="card-img-top"
+                                        alt="Esporte 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Recreação</h5>
+                                        <p class="card-text">Oferecemos serviços de recreação personalizados para todas
+                                            as idades, com jogos e atividades adaptadas ao público do seu evento. Nossa
+                                            equipe de recreadores treinados se dedica a criar experiências únicas,
+                                            garantindo diversão, aprendizado e momentos inesquecíveis para todos os
+                                            participantes.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card">
-                                <img src="/1_frontend/1.2_assets/1.2.3_eventos/aniversario tematico (1).jpeg" class="card-img-top" alt="Esporte 2">
-                                <div class="card-body">
-                                    <h5 class="card-title">Aniversário temático</h5>
-                                    <p class="card-text">Transforme o seu aniversário em um evento inesquecível! Oferecemos festas personalizadas, repletas de diversão, alegria e momentos especiais para todas as idades. Nosso espaço é ideal para festas temáticas, brincadeiras interativas e atividades criativas, garantindo que a diversão esteja sempre presente!</p>
+                            <div class="col-3">
+                                <div class="card">
+                                    <img src="/1_frontend/1.2_assets/1.2.3_eventos/aniversario tematico (1).jpeg"
+                                        class="card-img-top" alt="Esporte 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Aniversário temático</h5>
+                                        <p class="card-text">Transforme o seu aniversário em um evento inesquecível!
+                                            Oferecemos festas personalizadas, repletas de diversão, alegria e momentos
+                                            especiais para todas as idades. Nosso espaço é ideal para festas temáticas,
+                                            brincadeiras interativas e atividades criativas, garantindo que a diversão
+                                            esteja sempre presente!</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card">
-                                <img src="/1_frontend/1.2_assets/1.2.3_eventos/ferias-em-condominios.png" class="card-img-top" alt="Esporte 3">
-                                <div class="card-body">
-                                    <h5 class="card-title">Programação de férias - condomínios e clubes</h5>
-                                    <p class="card-text">Durante as férias, garantimos que as crianças e adolescentes do condomínio tenham uma agenda cheia de aventuras, aprendizado e muita diversão! Com uma programação diversificada, nossas atividades são projetadas para entreter, educar e desenvolver habilidades sociais e motoras de maneira lúdica.</p>
+                            <div class="col-3">
+                                <div class="card">
+                                    <img src="/1_frontend/1.2_assets/1.2.3_eventos/ferias-em-condominios.png"
+                                        class="card-img-top" alt="Esporte 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Programação de férias - condomínios e clubes</h5>
+                                        <p class="card-text">Durante as férias, garantimos que as crianças e
+                                            adolescentes do condomínio tenham uma agenda cheia de aventuras, aprendizado
+                                            e muita diversão! Com uma programação diversificada, nossas atividades são
+                                            projetadas para entreter, educar e desenvolver habilidades sociais e motoras
+                                            de maneira lúdica.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#esportesCarousel1"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="col-2 visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#esportesCarousel1"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="col-2 visually-hidden">Próximo</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#esportesCarousel1" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="col-2 visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#esportesCarousel1" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="col-2 visually-hidden">Próximo</span>
-            </button>
         </div>
-    </div>
-    <!-- Segundo Carrossel -->
-    <div class="carousel-container2">
-        <h3 class="titulocorp">Eventos corporativos</h3>
-        <p class="subtitulotitulocorp">
-            Nos eventos corporativos do Passatempo Educativo, oferecemos experiências que fortalecem equipes e promovem valores empresariais. Atividades como o Community Day, Game 2030, e Kids Day integram voluntariado, sustentabilidade e celebrações familiares. Projetos como Robótica STEAM e Scape Room estimulam criatividade, colaboração e resolução de problemas. Com foco em bem-estar e desenvolvimento, destacam-se a SIPAT e o Teatro Empresarial, que abordam saúde, segurança e competências interpessoais de forma inovadora.
-        </p>
-        <div id="oficinasCarousel1" class="carousel slide mb-4" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row g-2">
-                        <div class="col-2">
-                            <div class="card1">
-                                <img src="/1_frontend/1.2_assets/1.2.3_eventos/community-day-_2_.png" class="card1-img-top" alt="Community Day">
-                                <div class="card1-body">
-                                    <h5 class="card1-title">Community Day</h5>
-                                    <p class="card1-text">O Community Day engaja colaboradores em ações voluntárias, promovendo impacto positivo na comunidade, fortalecendo vínculos entre equipes e alinhando a missão da empresa à responsabilidade social. É uma oportunidade de vivenciar o voluntariado e contribuir para o bem-estar social e ambiental.</p>
+        <!-- Segundo Carrossel -->
+        <div class="carousel-container2">
+            <h3 class="titulocorp">Eventos corporativos</h3>
+            <p class="subtitulotitulocorp">
+                Nos eventos corporativos do Passatempo Educativo, oferecemos experiências que fortalecem equipes e
+                promovem valores empresariais. Atividades como o Community Day, Game 2030, e Kids Day integram
+                voluntariado, sustentabilidade e celebrações familiares. Projetos como Robótica STEAM e Scape Room
+                estimulam criatividade, colaboração e resolução de problemas. Com foco em bem-estar e desenvolvimento,
+                destacam-se a SIPAT e o Teatro Empresarial, que abordam saúde, segurança e competências interpessoais de
+                forma inovadora.
+            </p>
+            <div id="oficinasCarousel1" class="carousel slide mb-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row g-2">
+                            <div class="col-2">
+                                <div class="card1">
+                                    <img src="/1_frontend/1.2_assets/1.2.3_eventos/community-day-_2_.png"
+                                        class="card1-img-top" alt="Community Day">
+                                    <div class="card1-body">
+                                        <h5 class="card1-title">Community Day</h5>
+                                        <p class="card1-text">O Community Day engaja colaboradores em ações voluntárias,
+                                            promovendo impacto positivo na comunidade, fortalecendo vínculos entre
+                                            equipes e alinhando a missão da empresa à responsabilidade social. É uma
+                                            oportunidade de vivenciar o voluntariado e contribuir para o bem-estar
+                                            social e ambiental.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="card1">
+                                    <img src="/1_frontend/1.2_assets/1.2.3_eventos/Game 2030.jpg" class="card1-img-top"
+                                        alt="Game 2030">
+                                    <div class="card1-body">
+                                        <h5 class="card1-title">Game 2030</h5>
+                                        <p class="card1-text">O Game 2030 é um jogo empresarial que une aprendizado e
+                                            diversão, abordando os Objetivos de Desenvolvimento Sustentável da ONU. Em
+                                            equipes, os participantes enfrentam desafios reais, buscando soluções
+                                            colaborativas e sustentáveis. Totalmente customizável, o game conecta as
+                                            metas da empresa aos ODS e pode ser reportado no COP do Pacto Global.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="card1">
+                                    <img src="/1_frontend/1.2_assets/1.2.3_eventos/Kids day  (1).png"
+                                        class="card1-img-to" alt="Kids Day">
+                                    <div class="card1-body">
+                                        <h5 class="card1-title">Kids Day</h5>
+                                        <p class="card1-text">Um evento anual para celebrar o dia das crianças na sua
+                                            empresa onde realizamos uma programação especial para os filhos dos
+                                            colaboradores. O Programa é uma ação que aproxima a família do ambiente de
+                                            trabalho, sendo estabelecido um dia para que os profissionais possam levar
+                                            seus filhos à empresa. Oficinas culturais e ambientais, esquetes teatrais
+                                            sobre um dia de trabalho fazem parte deste programa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="card1">
+                                    <img src="/1_frontend/1.2_assets/1.2.3_eventos/leilão do conhecimento .png"
+                                        class="card1-img-top" alt="Leilão Temático">
+                                    <div class="card1-body">
+                                        <h5 class="card1-title">Leilão Temático</h5>
+                                        <p class="card1-text">Os nossos leilões sempre acabam com um gosto de “quero
+                                            mais”. Divididos em equipes, os grupos devem responder perguntas sobre o
+                                            tema proposto pela empresa, afim de conseguirem recompensas por cada
+                                            resposta correta, possibilitando a compra de itens no nosso leilão. Ao
+                                            decorrer da atividade, trazemos dados importantes e atualizados sobre a
+                                            temática, eis alguns: Segurança no Trabalho - Semana SIPAT Abril verde Maio
+                                            Amarelo Outubro Rosa Novembro Azul.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-2">
-                            <div class="card1">
-                                <img src="/1_frontend/1.2_assets/1.2.3_eventos/Game 2030.jpg" class="card1-img-top" alt="Game 2030">
-                                <div class="card1-body">
-                                    <h5 class="card1-title">Game 2030</h5>
-                                    <p class="card1-text">O Game 2030 é um jogo empresarial que une aprendizado e diversão, abordando os Objetivos de Desenvolvimento Sustentável da ONU. Em equipes, os participantes enfrentam desafios reais, buscando soluções colaborativas e sustentáveis. Totalmente customizável, o game conecta as metas da empresa aos ODS e pode ser reportado no COP do Pacto Global.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-2">
+                            <div class="col-2">
+                                <div class="card1">
+                                    <img src="/1_frontend/1.2_assets/1.2.3_eventos/robotica.png" class="card1-img-top"
+                                        alt="Robótica">
+                                    <div class="card1-body">
+                                        <h5 class="card1-title">Robótica</h5>
+                                        <p class="card1-text">O projeto STEAM visa unir conhecimentos de quatro áreas
+                                            (ciências, tecnologia, engenharia, artes e matemática) em torno da
+                                            construção ou automatização de algo que resolva o problema proposto. Kits de
+                                            robótica, projetos "do it yourself" e arduinos fazem desse novo projeto algo
+                                            dinâmico e inovador para os colaboradores.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-2">
-                            <div class="card1">
-                                <img src="/1_frontend/1.2_assets/1.2.3_eventos/Kids day  (1).png" class="card1-img-to" alt="Kids Day">
-                                <div class="card1-body">
-                                    <h5 class="card1-title">Kids Day</h5>
-                                    <p class="card1-text">Um evento anual para celebrar o dia das crianças na sua empresa onde realizamos uma programação especial para os filhos dos colaboradores. O Programa é uma ação que aproxima a família do ambiente de trabalho, sendo estabelecido um dia para que os profissionais possam levar seus filhos à empresa. Oficinas culturais e ambientais, esquetes teatrais sobre um dia de trabalho fazem parte deste programa.</p>
+                            <div class="col-2">
+                                <div class="card1">
+                                    <img src="/1_frontend/1.2_assets/1.2.3_eventos/Scape room  (1).jpeg"
+                                        class="card1-img-top" alt="Scape Room">
+                                    <div class="card1-body">
+                                        <h5 class="card1-title">Scape Room</h5>
+                                        <p class="card1-text">O Scape Room Corporativo é uma atividade temática que
+                                            fortalece o trabalho em equipe, desenvolve resolução de problemas e estimula
+                                            criatividade e resiliência. Com desafios envolventes, aprimora competências
+                                            e promove colaboração em um ambiente dinâmico</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-2">
-                            <div class="card1">
-                                <img src="/1_frontend/1.2_assets/1.2.3_eventos/leilão do conhecimento .png" class="card1-img-top" alt="Leilão Temático">
-                                <div class="card1-body">
-                                    <h5 class="card1-title">Leilão Temático</h5>
-                                    <p class="card1-text">Os nossos leilões sempre acabam com um gosto de “quero mais”. Divididos em equipes, os grupos devem responder perguntas sobre o tema proposto pela empresa, afim de conseguirem recompensas por cada resposta correta, possibilitando a compra de itens no nosso leilão. Ao decorrer da atividade, trazemos dados importantes e atualizados sobre a temática, eis alguns: Segurança no Trabalho - Semana SIPAT Abril verde Maio Amarelo Outubro Rosa Novembro Azul.</p>
+                            <div class="col-2">
+                                <div class="card1">
+                                    <img src="/1_frontend/1.2_assets/1.2.3_eventos/corporativo (2).jpg"
+                                        class="card1-img-top" alt="SIPAT">
+                                    <div class="card1-body">
+                                        <h5 class="card1-title">SIPAT</h5>
+                                        <p class="card1-text">Focado na conscientização dos colaboradores sobre a
+                                            importância da saúde e segurança no ambiente de trabalho, a SIPAT envolve
+                                            uma série de atividades como palestras, workshops, dinâmicas, treinamentos
+                                            práticos, e apresentações sobre prevenção de acidentes, ergonomia, saúde
+                                            mental, primeiros socorros, e bem-estar geral. O objetivo é promover um
+                                            ambiente de trabalho seguro e saudável, incentivando a cultura da prevenção
+                                            e do cuidado entre todos os colaboradores.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="card1">
+                                    <img src="/1_frontend/1.2_assets/1.2.3_eventos/teatro (1).jpeg"
+                                        class="card1-img-top" alt="Teatro">
+                                    <div class="card1-body">
+                                        <h5 class="card1-title">Teatro</h5>
+                                        <p class="card1-text">Ferramenta criativa e interativa utilizada para melhorar a
+                                            comunicação, o trabalho em equipe, e o desenvolvimento pessoal dos
+                                            colaboradores. Por meio de apresentações teatrais, oficinas de improvisação,
+                                            e encenações de situações do cotidiano empresarial, os colaboradores podem
+                                            explorar temas como liderança, relacionamento interpessoal, gestão de
+                                            conflitos, e empatia.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="row g-2">
-                        <div class="col-2">
-                            <div class="card1">
-                                <img src="/1_frontend/1.2_assets/1.2.3_eventos/robotica.png" class="card1-img-top" alt="Robótica">
-                                <div class="card1-body">
-                                    <h5 class="card1-title">Robótica</h5>
-                                    <p class="card1-text">O projeto STEAM visa unir conhecimentos de quatro áreas (ciências, tecnologia, engenharia, artes e matemática) em torno da construção ou automatização de algo que resolva o problema proposto. Kits de robótica, projetos "do it yourself" e arduinos fazem desse novo projeto algo dinâmico e inovador para os colaboradores.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-2">
-                            <div class="card1">
-                                <img src="/1_frontend/1.2_assets/1.2.3_eventos/Scape room  (1).jpeg" class="card1-img-top" alt="Scape Room">
-                                <div class="card1-body">
-                                    <h5 class="card1-title">Scape Room</h5>
-                                    <p class="card1-text">O Scape Room Corporativo é uma atividade temática que fortalece o trabalho em equipe, desenvolve resolução de problemas e estimula criatividade e resiliência. Com desafios envolventes, aprimora competências e promove colaboração em um ambiente dinâmico</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-2">
-                            <div class="card1">
-                                <img src="/1_frontend/1.2_assets/1.2.3_eventos/corporativo (2).jpg" class="card1-img-top" alt="SIPAT">
-                                <div class="card1-body">
-                                    <h5 class="card1-title">SIPAT</h5>
-                                    <p class="card1-text">Focado na conscientização dos colaboradores sobre a importância da saúde e segurança no ambiente de trabalho, a SIPAT envolve uma série de atividades como palestras, workshops, dinâmicas, treinamentos práticos, e apresentações sobre prevenção de acidentes, ergonomia, saúde mental, primeiros socorros, e bem-estar geral. O objetivo é promover um ambiente de trabalho seguro e saudável, incentivando a cultura da prevenção e do cuidado entre todos os colaboradores.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-2">
-                            <div class="card1">
-                                <img src="/1_frontend/1.2_assets/1.2.3_eventos/teatro (1).jpeg" class="card1-img-top" alt="Teatro">
-                                <div class="card1-body">
-                                    <h5 class="card1-title">Teatro</h5>
-                                    <p class="card1-text">Ferramenta criativa e interativa utilizada para melhorar a comunicação, o trabalho em equipe, e o desenvolvimento pessoal dos colaboradores. Por meio de apresentações teatrais, oficinas de improvisação, e encenações de situações do cotidiano empresarial, os colaboradores podem explorar temas como liderança, relacionamento interpessoal, gestão de conflitos, e empatia.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- Botões de navegação -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#oficinasCarousel1"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#oficinasCarousel1"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
             </div>
-            <!-- Botões de navegação -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#oficinasCarousel1" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#oficinasCarousel1" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Próximo</span>
-            </button>
         </div>
-    </div>
     </div>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const cards = document.querySelectorAll(".card1");
             let maxHeight = 0;
-    
+
             // Descubra a maior altura
             cards.forEach((card1) => {
                 const cardHeight = card.offsetHeight;
                 if (cardHeight > maxHeight) maxHeight = cardHeight;
             });
-    
+
             // Aplique a maior altura a todos os cards
             cards.forEach((card1) => {
                 card.style.height = maxHeight + "px";
@@ -243,25 +323,26 @@
         document.addEventListener("DOMContentLoaded", function () {
             const cards = document.querySelectorAll(".card");
             let maxHeight = 0;
-    
+
             // Descubra a maior altura
             cards.forEach((card) => {
                 const cardHeight = card.offsetHeight;
                 if (cardHeight > maxHeight) maxHeight = cardHeight;
             });
-    
+
             // Aplique a maior altura a todos os cards
             cards.forEach((card) => {
                 card.style.height = maxHeight + "px";
             });
         });
-    </script> 
-    
+    </script>
+
     <footer id="rodap">
         <div class="container-fluid">
             <div class="row justify-content-between align-items-center">
                 <div class="col-6 text-start">
-                    <p class="texto-rodape">&copy; 2024 <a href="https://passatempoeducativo.org.br" style="color: white;">passatempoeducativo.org.br</a></p>
+                    <p class="texto-rodape">&copy; 2024 <a href="https://passatempoeducativo.org.br"
+                            style="color: white;">passatempoeducativo.org.br</a></p>
                 </div>
                 <div class="col-6 text-end">
                     <a href="https://facebook.com"><i class="bi bi-facebook social-icon"></i></a>
@@ -270,5 +351,5 @@
                 </div>
             </div>
         </div>
-    </footer>    
+    </footer>
 </body>
