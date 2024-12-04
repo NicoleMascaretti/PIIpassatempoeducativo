@@ -145,6 +145,12 @@ article {
     /* Centraliza o texto */
 }
 
+#subtitulo2{
+    margin-top: 10px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
+}
+
 .imagem-ods {
     max-width: 50%;
     /* Ajuste o tamanho da imagem (50% da largura do contêiner) */
