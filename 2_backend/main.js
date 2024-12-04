@@ -123,7 +123,13 @@ app.get('/eventos', async (req,res)=> {
 })
 
 app.post('/remover-eventos', async (req,res) =>{
+    const nome = req.body.nome
     try {
+        const nomeEvento = await Event.deleteOne({ "nome":nome })
+        if(!nomeEvento) {
+            return res.status(404).json({ error: "Evento nao encontrado"})
+        }
+        res.status(200).json({ message: "Evento deletado com sucesso"})
 
     } catch (err) {
         res.status(500).json({ error: "Erro ao remover evento"})
