@@ -1,18 +1,20 @@
 // REST API
 
-require("dotenv").config();
+require("dotenv").config()
 const cors = require('cors')
 const express = require ('express')
 const uniqueValidator = require('mongoose-unique-validator')
 const app = express()
 const mongoose = require('mongoose')
+const bcrypt = require('bcrypt')
+const multer = require('multer')
 app.use(express.json())
 app.use(cors())
 
 app.listen(3000, () => {
         try {
             db_connect()
-            console.log("App running")
+            console.log("express app running on port 3000")
         } catch (error) {
             console.log("ERRO: ", error)
         }
@@ -28,13 +30,15 @@ async function db_connect () {
     mongoose.connect(connect_string)
 }
 
+// Schemas
+
 // schema usuarios
 const userSchema = mongoose.Schema({
     login: {type: String, required: true, unique: true},
     password: {type: String, required: true},
 })
 userSchema.plugin(uniqueValidator)
-const user = mongoose.model("user", userSchema)
+const Usuario = mongoose.model("Usuario", userSchema)
 
 // schema eventos
 
@@ -43,9 +47,10 @@ const eventSchema = mongoose.Schema({
     desc: {type: String, required: true},
     imglink: {type: String, required: true}
 })
+const Event = mongoose.model("Event", eventSchema)
 
 // post para registro de usuario
-app.post('/signup', async (req,res)=> {
+app.post('/login', async (req,res)=> {
     const login = req.body.login
     const password = req.body.password
 
@@ -65,18 +70,49 @@ app.post('/signup', async (req,res)=> {
     if (senhaValida===true) {
         return res.status(200).json({mensagem: "Login concluido"})
     }
-
-    const usuario = new Usuario({
-        login: login,
-        password: password
-    })
-    const respMongo = await usuario.save()
-    console.log(respMongo)
     res.end()
+})
+
+app.post('/signup', async (req,res)=> {
+    try {
+        const login = req.body.login
+        const password = req.body.password
+        const criptografada = await bcrypt.hash(password, 10)
+        const usuario = new Usuario({
+            login: login,
+            password: criptografada
+        })
+        const respMongo = await usuario.save()
+        console.log(respMongo)
+        res.end()
+    } catch (err) {
+        console.log("Error during signup: ", err)
+        return res.status(500).send({mensagem: 'Erro de cadastro'})
+    }
 })
 
 app.post('/eventos', async (req,res)=> {
     const nome = req.body.nome
     const desc = req.body.descricao
     const imagem = req.body.imagem
+    
+    const evento = new Event({
+        nome: nome,
+        desc: desc,
+        imglink: imagem
+    })
+    const respMongo = await usuario.save()
+    console.log(respMongo)
+    res.end()
 })
+
+app.get('/eventos', async (req,res)=> {
+    try {
+        const events = await Event.find()
+        res.status(200).json(events)
+    } catch (err) {
+        res.status(500).json({ error: 'Erro ao buscar eventos'})
+    }
+})
+
+
