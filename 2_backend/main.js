@@ -7,7 +7,6 @@ const uniqueValidator = require('mongoose-unique-validator')
 const app = express()
 const mongoose = require('mongoose')
 const bcrypt = require('bcrypt')
-const multer = require('multer')
 app.use(express.json())
 app.use(cors())
 
@@ -49,7 +48,7 @@ const eventSchema = mongoose.Schema({
 })
 const Event = mongoose.model("Event", eventSchema)
 
-// post para registro de usuario
+// post para login de usuarios
 app.post('/login', async (req,res)=> {
     const login = req.body.login
     const password = req.body.password
@@ -73,6 +72,7 @@ app.post('/login', async (req,res)=> {
     res.end()
 })
 
+// post para registro de usuarios
 app.post('/signup', async (req,res)=> {
     try {
         const login = req.body.login
@@ -91,21 +91,28 @@ app.post('/signup', async (req,res)=> {
     }
 })
 
+// post para adicionar eventos
 app.post('/eventos', async (req,res)=> {
-    const nome = req.body.nome
-    const desc = req.body.descricao
-    const imagem = req.body.imagem
+    try {
+        const nome = req.body.nome
+        const desc = req.body.descricao
+        const imagem = req.body.imagem
+        
+        const evento = new Event({
+            nome: nome,
+            desc: desc,
+            imglink: imagem
+        })
     
-    const evento = new Event({
-        nome: nome,
-        desc: desc,
-        imglink: imagem
-    })
-    const respMongo = await usuario.save()
-    console.log(respMongo)
-    res.end()
+        const respMongo = await evento.save()
+        console.log(respMongo)
+        res.end()
+    } catch(err) {
+        return res.status(500).json({ error: "Falha ao adicionar evento"})
+    }
 })
 
+// get para pegar todos os eventos ativos e passados
 app.get('/eventos', async (req,res)=> {
     try {
         const events = await Event.find()
@@ -115,4 +122,17 @@ app.get('/eventos', async (req,res)=> {
     }
 })
 
+// post para remover eventos
+app.post('/remover-eventos', async (req,res)=> {
+    const nome = req.body.nome
+    try {
+        const nomeEvento = await Event.deleteOne({ "nome": nome})
+        if (!nomeEvento) {
+            return res.status(404).json({ error: 'Evento não encontrado'})
+        }
+        res.status(200).json({ message: 'Evento deletado com sucesso'})
+    } catch (err) {
+        res.status(500).json({ error: 'Erro ao deletar evento'})
+    }
+})
 
