@@ -122,17 +122,28 @@ app.get('/eventos', async (req,res)=> {
     }
 })
 
-// post para remover eventos
-app.post('/remover-eventos', async (req,res)=> {
-    const nome = req.body.nome
-    try {
-        const nomeEvento = await Event.deleteOne({ "nome": nome})
-        if (!nomeEvento) {
-            return res.status(404).json({ error: 'Evento não encontrado'})
-        }
-        res.status(200).json({ message: 'Evento deletado com sucesso'})
-    } catch (err) {
-        res.status(500).json({ error: 'Erro ao deletar evento'})
-    }
-})
 
+app.post('/contato', async (req,res)=> {
+    const nome = req.body.nome
+    const email = req.body.email
+    const mensagem = req.body.mensagem
+    
+    const mensagens = new Mensagem({
+        nome: nome,
+        email: email,
+        mensagem: mensagem
+    })
+
+    const respMongo = await mensagens.save()
+    console.log(respMongo)
+    res.end()
+});
+
+app.get('/contato', async (req,res)=> {
+    try {
+        const mensagens = await Mensagem.find()
+        res.status(200).json(mensagens)
+    } catch (err) {
+        res.status(500).json({ error: 'Erro ao buscar mensagens'})
+    }
+});
