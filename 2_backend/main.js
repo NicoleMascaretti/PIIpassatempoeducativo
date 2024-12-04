@@ -78,9 +78,14 @@ app.post('/login', async (req,res)=> {
     }
     
     const senhaValida = await bcrypt.compare(password, userValido.password)
+    console.log(senhaValida)
 
     if (!senhaValida) {
         return res.status(401).json({mensagem: "Senha invalida"})
+    }
+
+    if (senhaValida===true) {
+        return res.status(200).json({mensagem: "Login Completo"})
     }
     res.end()
 })
