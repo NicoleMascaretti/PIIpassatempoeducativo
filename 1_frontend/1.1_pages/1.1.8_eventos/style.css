@@ -124,34 +124,6 @@ nav {
   text-decoration-line: underline;
 }
 
-.social-icon {
-  font-size: 1.5rem;
-  margin: 0 10px;
-  color: white;
-}
-
-@media (max-width: 768px) {
-  #rodap .row {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .social-icon {
-    margin: 10px 0;
-  }
-}
-
-@media (max-width: 768px) {
-  #rodap .row {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .social-icon {
-    margin: 10px 0;
-  }
-}
-
 /* fim da estilizacao relacionada ao rodape */
 
 /* estilizacao parte central */
