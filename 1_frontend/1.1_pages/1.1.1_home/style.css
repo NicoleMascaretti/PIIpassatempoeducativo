@@ -92,7 +92,7 @@ nav {
 }
 
 #botao-entrar {
-    background-color: #46B910;
+    background-color: #6787E7;
     color: white;
     border: none;
     width: 120px;
@@ -103,7 +103,7 @@ nav {
 
 #botao-entrar:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 15px green;
+    box-shadow: 0 0 15px #6787E7;
     transition: 0.5s;
 }
 

@@ -66,14 +66,14 @@ nav {
 }
 
 .botao-entrar {
-  background-color: #68F128;
+  background-color: #6787E7;
   border-radius: 0;
   border: none;
   width: 100px;
 }
 
 #botao-entrar {
-  background-color: #46B910;
+  background-color: #6787E7;
   color: white;
   border: none;
   width: 120px;
@@ -84,7 +84,7 @@ nav {
 
 #botao-entrar:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 15px green;
+  box-shadow: 0 0 15px #6787E7;
   transition: 0.5s;
 }
 
@@ -196,7 +196,7 @@ nav {
 }
 
 .card1 {
-  border-radius: 10px;
+  border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -280,9 +280,9 @@ nav {
 }
 
 .card {
-  border-radius: 10px;
+  border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
   text-align: center;
   max-width: 400px;
   /* Define a largura máxima */
@@ -326,4 +326,14 @@ nav {
 .social-icon {
     width: 35px;
     height: 35px;
+}
+
+#cartao{
+  border-radius: 15px;
+  border: none;
+  background-color: #FFF;
+}
+
+#cartao1{
+  background-color: #FFF;
 }

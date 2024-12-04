@@ -59,14 +59,14 @@ nav {
 }
 
 .botao-entrar {
-    background-color: #46B910;
+    background-color: #6787E7;
     border-radius: 0;
     border: none;
     width: 100px;
 }
 
 #botao-entrar {
-    background-color: #46B910;
+    background-color: #6787E7;
     color: white;
     border: none;
     width: 120px;
@@ -77,7 +77,7 @@ nav {
 
 #botao-entrar:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 15px green;
+    box-shadow: 0 0 15px #6787E7;
     transition: 0.5s;
 }
 
@@ -106,12 +106,24 @@ nav {
 
 .botao-enviar {
     width: 250px;
-    color: white;
-    background-color: #46B910;
+    color: rgb(0, 0, 0);
+    background-color: #F4DD2B;
+    font-weight: bold;
     font-size: 20px;
     border: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
+    transition: 0.5s;
+    box-shadow: #000;
+
 }
 
+.botao-enviar:hover {
+    transform: scale(1.1);
+    background-color: #F4DD2B;
+    color:rgb(0, 0, 0);
+    box-shadow: 0 0 15px #000000;
+    transition: 0.5s;
+}
 /* Fim style form contato */
 
 /* Inicio style rodape */
@@ -157,4 +169,18 @@ nav {
 .social-icon {
     width: 35px;
     height: 35px;
+}
+
+#contato{
+    background: linear-gradient(120deg, #8DA5ED 8%, #3E4096 100%);
+    color: #FFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
+    border-radius: 10px;
+    border-color: #3E4096;
+}
+
+.card{
+    background-color: #3E4096;
+    border-radius: 10px;
+    border: none;
 }
