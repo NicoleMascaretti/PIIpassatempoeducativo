@@ -126,6 +126,10 @@ nav {
   text-decoration-line: underline;
 }
 
+.icones-rodape a{
+  text-decoration: none;
+}
+
 /* fim da estilizacao relacionada ao rodape */
 
 .elementos {

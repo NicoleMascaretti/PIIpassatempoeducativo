@@ -259,6 +259,10 @@ header .menu .col-lg-2 {
     text-decoration-line: underline;
 }
 
+.icones-rodape a {
+    text-decoration: none;
+}
+
 .redes img {
     height: 20px;
     width: 25px;

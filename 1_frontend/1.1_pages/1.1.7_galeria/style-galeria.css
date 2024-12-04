@@ -139,6 +139,10 @@ nav {
     text-decoration-line: underline;
 }
 
+.icones-rodape a {
+    text-decoration: none;
+}
+
 .redes img {
     height: 25px;
     width: 25px;
