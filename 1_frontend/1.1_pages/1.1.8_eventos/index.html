@@ -92,10 +92,10 @@
                     <div class="carousel-item active">
                         <div class="row">
                             <div class="col-3">
-                                <div class="card" id="cartao">
+                                <div class="card border-0">
                                     <img src="/1_frontend/1.2_assets/1.2.3_eventos/Recreacao1.png" class="card-img-top"
-                                        alt="imagem de recreação">
-                                    <div class="card-body" id="cartao1">
+                                        id="bosta" alt="imagem de recreação">
+                                    <div class="card-body">
                                         <h5 class="card-title">Recreação</h5>
                                         <p class="card-text">Oferecemos serviços de recreação personalizados para todas
                                             as idades, com jogos e atividades adaptadas ao público do seu evento. Nossa
@@ -106,10 +106,10 @@
                                 </div>
                             </div>
                             <div class="col-3">
-                                <div class="card" id="cartao">
+                                <div class="card border-0">
                                     <img src="/1_frontend/1.2_assets/1.2.3_eventos/aniversario tematico (1).jpeg"
                                         class="card-img-top" alt="imagem do evento aniversário temático">
-                                    <div class="card-body" id="cartao1">
+                                    <div class="card-body">
                                         <h5 class="card-title">Aniversário temático</h5>
                                         <p class="card-text">Transforme o seu aniversário em um evento inesquecível!
                                             Oferecemos festas personalizadas, repletas de diversão, alegria e momentos
@@ -120,10 +120,10 @@
                                 </div>
                             </div>
                             <div class="col-3">
-                                <div class="card" id="cartao">
+                                <div class="card border-0">
                                     <img src="/1_frontend/1.2_assets/1.2.3_eventos/ferias-em-condominios.png"
                                         class="card-img-top" alt="imagem do evento férias em condomínios">
-                                    <div class="card-body" id="cartao1">
+                                    <div class="card-body">
                                         <h5 class="card-title">Programação de férias - condomínios e clubes</h5>
                                         <p class="card-text">Durante as férias, garantimos que as crianças e
                                             adolescentes do condomínio tenham uma agenda cheia de aventuras, aprendizado
@@ -164,7 +164,7 @@
                     <div class="carousel-item active">
                         <div class="row g-2">
                             <div class="col-2">
-                                <div class="card1">
+                                <div class="card border-0">
                                     <img src="/1_frontend/1.2_assets/1.2.3_eventos/community-day-_2_.png"
                                         class="card1-img-top" alt="Community Day">
                                     <div class="card1-body">
@@ -178,7 +178,7 @@
                                 </div>
                             </div>
                             <div class="col-2">
-                                <div class="card1">
+                                <div class="card border-0">
                                     <img src="/1_frontend/1.2_assets/1.2.3_eventos/Game 2030.jpg" class="card1-img-top"
                                         alt="Game 2030">
                                     <div class="card1-body">
@@ -192,7 +192,7 @@
                                 </div>
                             </div>
                             <div class="col-2">
-                                <div class="card1">
+                                <div class="card border-0">
                                     <img src="/1_frontend/1.2_assets/1.2.3_eventos/Kids day  (1).png"
                                         class="card1-img-to" alt="Kids Day">
                                     <div class="card1-body">
@@ -207,7 +207,7 @@
                                 </div>
                             </div>
                             <div class="col-2">
-                                <div class="card1">
+                                <div class="card border-0">
                                     <img src="/1_frontend/1.2_assets/1.2.3_eventos/leilão do conhecimento .png"
                                         class="card1-img-top" alt="Leilão Temático">
                                     <div class="card1-body">
@@ -227,7 +227,7 @@
                     <div class="carousel-item">
                         <div class="row g-2">
                             <div class="col-2">
-                                <div class="card1">
+                                <div class="card border-0">
                                     <img src="/1_frontend/1.2_assets/1.2.3_eventos/robotica.png" class="card1-img-top"
                                         alt="Robótica">
                                     <div class="card1-body">
@@ -241,7 +241,7 @@
                                 </div>
                             </div>
                             <div class="col-2">
-                                <div class="card1">
+                                <div class="card border-0">
                                     <img src="/1_frontend/1.2_assets/1.2.3_eventos/Scape room  (1).jpeg"
                                         class="card1-img-top" alt="Scape Room">
                                     <div class="card1-body">
@@ -254,7 +254,7 @@
                                 </div>
                             </div>
                             <div class="col-2">
-                                <div class="card1">
+                                <div class="card border-0">
                                     <img src="/1_frontend/1.2_assets/1.2.3_eventos/corporativo (2).jpg"
                                         class="card1-img-top" alt="SIPAT">
                                     <div class="card1-body">
@@ -271,7 +271,7 @@
                                 </div>
                             </div>
                             <div class="col-2">
-                                <div class="card1">
+                                <div class="card border-0">
                                     <img src="/1_frontend/1.2_assets/1.2.3_eventos/teatro (1).jpeg"
                                         class="card1-img-top" alt="Teatro">
                                     <div class="card1-body">
@@ -302,40 +302,6 @@
             </div>
         </div>
     </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const cards = document.querySelectorAll(".card1");
-            let maxHeight = 0;
-
-            // Descubra a maior altura
-            cards.forEach((card1) => {
-                const cardHeight = card.offsetHeight;
-                if (cardHeight > maxHeight) maxHeight = cardHeight;
-            });
-
-            // Aplique a maior altura a todos os cards
-            cards.forEach((card1) => {
-                card.style.height = maxHeight + "px";
-            });
-        });
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const cards = document.querySelectorAll(".card");
-            let maxHeight = 0;
-
-            // Descubra a maior altura
-            cards.forEach((card) => {
-                const cardHeight = card.offsetHeight;
-                if (cardHeight > maxHeight) maxHeight = cardHeight;
-            });
-
-            // Aplique a maior altura a todos os cards
-            cards.forEach((card) => {
-                card.style.height = maxHeight + "px";
-            });
-        });
-    </script>
     <!-- estilizacao icones do rodape -->
 
     <footer class="container-fluid" id="rodap">
@@ -353,4 +319,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
 </body>
+
+</html>
