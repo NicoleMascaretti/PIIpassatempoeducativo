@@ -184,6 +184,23 @@ article {
     margin-top: 0px;
 }
 
+.custom-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Garante que o card ocupe toda a altura disponível */
+}
+
+.custom-card .card-body {
+    flex-grow: 1; /* Faz com que o corpo do card cresça para ocupar o espaço disponível */
+}
+
+
+.custom-card .card-img-top {
+    height: 350px; /* Ajuste conforme necessário */
+    object-fit: cover; /* Garante que a imagem se ajuste ao espaço disponível sem distorcer */
+}
+
 .row.text-center.align-item-center.justify-content-around {
     margin-top: 0px;
     /* Remove espaço extra entre o subtítulo e os cards */
