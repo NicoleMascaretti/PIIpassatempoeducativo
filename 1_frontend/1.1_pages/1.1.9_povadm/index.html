@@ -78,12 +78,12 @@
     </div>
     <div class="d-flex justify-content-center">
       <div class="elementos p-3 rounded">
-        <a href="">
-          <p>ADICIONAR EVENTO</p>
-          <div id="botao-adicionar" class="d-flex justify-content-center"">
-            <img src=" /1_frontend/1.2_assets/1.2.1_logos/mais.png" alt="botao-mais">
+        <button type="button" class="btn btn-adicionar" data-bs-toggle="modal" data-bs-target="#exampleModal"
+          data-bs-title="Evento" <p>ADICIONAR EVENTO</p>
+          <div class="d-flex justify-content-center">
+            <img src="/1_frontend/1.2_assets/1.2.1_logos/mais.png" alt="botao-mais">
           </div>
-        </a>
+        </button>
       </div>
     </div>
     <div class="d-flex justify-content-center my-2">
@@ -91,53 +91,85 @@
     </div>
     <div class="d-flex justify-content-center">
       <div class="elementos p-3 rounded">
-        <a href="">
-          <p>ADICIONAR SERVIÇO</p>
-          <div id="botao-adicionar" class="d-flex justify-content-center"">
-            <img src=" /1_frontend/1.2_assets/1.2.1_logos/mais.png" alt="">
+        <button type="button" class="btn btn-adicionar" data-bs-toggle="modal" data-bs-target="#exampleModal"
+          data-bs-title="Serviço" <p>ADICIONAR SERVIÇO</p>
+          <div class="d-flex justify-content-center">
+            <img src="/1_frontend/1.2_assets/1.2.1_logos/mais.png" alt="botao-mais">
           </div>
-        </a>
+        </button>
       </div>
     </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label" id="modal-label-name"></label>
+                <input type="text" class="form-control" id="nome-projeto">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label" id="modal-label-description"></label>
+                <textarea class="form-control" id="descricao-projeto"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary">Concluir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </main>
 
 
-   <!-- estilizacao icones do rodape -->
-   <style>
+  <!-- estilizacao icones do rodape -->
+  <style>
     .social-icon {
-    font-size: 1.5rem;
-    margin: 0 10px;
-    color: white;
+      font-size: 1.5rem;
+      margin: 0 10px;
+      color: white;
     }
 
     @media (max-width: 768px) {
-        #rodap .row {
-            flex-direction: column;
-            text-align: center;
-        }
-        .social-icon {
-            margin: 10px 0;
-        }
+      #rodap .row {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .social-icon {
+        margin: 10px 0;
+      }
     }
   </style>
-<footer id="rodap">
-  <div class="container-fluid">
+  <footer id="rodap">
+    <div class="container-fluid">
       <div class="row justify-content-between align-items-center">
-          <div class="col-6 text-start">
-              <p class="texto-rodape">&copy; 2024 <a href="https://passatempoeducativo.org.br" style="color: white;">passatempoeducativo.org.br</a></p>
-          </div>
-          <div class="col-6 text-end">
-              <a href="https://facebook.com"><i class="bi bi-facebook social-icon"></i></a>
-              <a href="https://instagram.com"><i class="bi bi-instagram social-icon"></i></a>
-              <a href="https://wa.me"><i class="bi bi-whatsapp social-icon"></i></a>
-          </div>
+        <div class="col-6 text-start">
+          <p class="texto-rodape">&copy; 2024 <a href="https://passatempoeducativo.org.br"
+              style="color: white;">passatempoeducativo.org.br</a></p>
+        </div>
+        <div class="col-6 text-end">
+          <a href="https://facebook.com"><i class="bi bi-facebook social-icon"></i></a>
+          <a href="https://instagram.com"><i class="bi bi-instagram social-icon"></i></a>
+          <a href="https://wa.me"><i class="bi bi-whatsapp social-icon"></i></a>
+        </div>
       </div>
-  </div>
-</footer>
+    </div>
+  </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrapbundle.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
