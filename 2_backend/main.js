@@ -3,7 +3,7 @@
 require("dotenv").config();
 const cors = require('cors')
 const express = require ('express')
-// const uniqueValidator = require('mongoose-unique-validator')
+const uniqueValidator = require('mongoose-unique-validator')
 const app = express()
 const mongoose = require('mongoose')
 app.use(express.json())
@@ -33,10 +33,16 @@ const userSchema = mongoose.Schema({
     login: {type: String, required: true, unique: true},
     password: {type: String, required: true},
 })
-// userSchema.plugin(uniqueValidator)
-
-// criando modelo
+userSchema.plugin(uniqueValidator)
 const user = mongoose.model("user", userSchema)
+
+// schema eventos
+
+const eventSchema = mongoose.Schema({
+    nome: {type: String, required: true,unique: true},
+    desc: {type: String, required: true},
+    imglink: {type: String, required: true}
+})
 
 // post para registro de usuario
 app.post('/signup', async (req,res)=> {
