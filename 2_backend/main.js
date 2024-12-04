@@ -32,7 +32,6 @@ async function db_connect () {
 const userSchema = mongoose.Schema({
     login: {type: String, required: true, unique: true},
     password: {type: String, required: true},
-    salt: {type: String, required: true}
 })
 // userSchema.plugin(uniqueValidator)
 
@@ -43,7 +42,6 @@ const user = mongoose.model("user", userSchema)
 app.post('/signup', async (req,res)=> {
     const login = req.body.login
     const password = req.body.password
-<<<<<<< HEAD
 
     const userValido = await Usuario.findOne({login: req.body.login})
     
@@ -55,11 +53,11 @@ app.post('/signup', async (req,res)=> {
     console.log(senhaValida)
 
     if (!senhaValida) {
-        return res.status(401).json({mensagem: "Senha invalida"})
+        return res.status(409).json({mensagem: "Senha invalida"})
     }
 
     if (senhaValida===true) {
-        return res.status(200).json({mensagem: "Login Completo"})
+        return res.status(200).json({mensagem: "Login concluido"})
     }
 
     const usuario = new Usuario({
@@ -69,4 +67,10 @@ app.post('/signup', async (req,res)=> {
     const respMongo = await usuario.save()
     console.log(respMongo)
     res.end()
+})
+
+app.post('/eventos', async (req,res)=> {
+    const nome = req.body.nome
+    const desc = req.body.descricao
+    const imagem = req.body.imagem
 })
