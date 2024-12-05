@@ -210,3 +210,20 @@ app.post('/r-eventos-c', async (req,res)=> {
         res.status(500).json({ error: "Erro ao remover evento"})
     }
 })
+
+app.put('/update-by-name', async (req, res) => {
+    const nome = req.body.nome // Nome do documento a ser atualizado
+
+    const novosDados = req.body.novosDados // Dados novos para substituir
+
+    try {
+        const resultado = await Exemplo.findOneAndUpdate(
+            { nome: nome },    // Filtro pelo campo nome
+            { $set: novosDados }, // Atualiza os campos especificados
+            { new: true }       // Retorna o documento atualizado
+        )
+        res.status(200).json(resultado);
+    } catch (error) {
+        res.status(500).json({ erro: 'Erro ao atualizar por nome', detalhes: error.message });
+    }
+})
