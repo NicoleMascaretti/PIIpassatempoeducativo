@@ -195,7 +195,6 @@ article {
     flex-grow: 1; /* Faz com que o corpo do card cresça para ocupar o espaço disponível */
 }
 
-
 .custom-card .card-img-top {
     height: 350px; /* Ajuste conforme necessário */
     object-fit: cover; /* Garante que a imagem se ajuste ao espaço disponível sem distorcer */
