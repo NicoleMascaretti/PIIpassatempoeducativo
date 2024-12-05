@@ -6,7 +6,6 @@ const urlCompleta = `${protocolo}${url}${endpoint}`;
 const criarCards = async () => {
   try {
     const postData = (await axios.get(urlCompleta)).data;
-
     // Seleciona o container do carrossel
     const carouselInner = document.querySelector('.carousel-inner');
 
