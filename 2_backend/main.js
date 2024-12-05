@@ -220,16 +220,20 @@ app.post('/r-eventos-c', async (req,res)=> {
     }
 })
 
-app.put('/update-by-name', async (req, res) => {
-    const nome = req.body.nome // Nome do documento a ser atualizado
+app.post('/update-eventos', async (req, res) => {
+    const nome = req.body.nomeantigo
 
-    const novosDados = req.body.novosDados // Dados novos para substituir
+    const novosDados = {
+        "nome":req.body.nome,
+        "desc":req.body.desc,
+        "imglink":req.body.imglink
+    }
 
     try {
         const resultado = await Exemplo.findOneAndUpdate(
-            { nome: nome },    // Filtro pelo campo nome
-            { $set: novosDados }, // Atualiza os campos especificados
-            { new: true }       // Retorna o documento atualizado
+            { nome: nome },
+            { $set: novosDados },
+            { new: true }
         )
         res.status(200).json(resultado);
     } catch (error) {
