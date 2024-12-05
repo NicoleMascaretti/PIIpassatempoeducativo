@@ -3,6 +3,14 @@ const url = "localhost:3000";
 const endpoint = "/eventos-s";
 const urlCompleta = `${protocolo}${url}${endpoint}`;
 
+let antigo = null
+let x = ""
+
+function setterAntigo(x){
+  antigo = x
+  console.log(antigo)
+}
+
 const atualizarEventos = async () => {
   try {
     const postData = (await axios.get(urlCompleta)).data;
@@ -15,7 +23,7 @@ const atualizarEventos = async () => {
       const bloco = document.createElement('div');
       bloco.classList.add('elementos', 'p-3', 'rounded');
       bloco.innerHTML = `
-        <button type="button" class="btn btn-adicionar border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <button type="button" class="btn btn-adicionar border-0" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="setterAntigo('${item.nome}')">
           <p>${item.nome}</p>
         </button>
       `;
@@ -48,20 +56,26 @@ const atualizarEventos = async () => {
 
     btnConcluir.addEventListener('click', async () => {
       const nome = document.getElementById('nome-projeto').value;
-      const descricao = document.getElementById('descricao-projeto').value;
+      const desc = document.getElementById('descricao-projeto').value;
       const imglink = document.getElementById('img-link').value;
 
-      if (!nome || !descricao || !imglink) {
+      if (!nome || !desc || !imglink) {
         alert("Por favor, preencha todos os campos!");
         return;
       }
 
       try {
-        if (eventoId) {
-          await axios.put(`${urlCompleta}/${eventoId}`, { nome, desc: descricao, imglink });
+        if (antigo) {
+          const dataAlterar = {
+            "nomeantigo":antigo,
+            "nome":nome,
+            "desc":desc,
+            "imglink":imglink
+          }
+          await axios.post("http://localhost:3000/update-eventos", dataAlterar);
           alert("Evento alterado com sucesso!");
         } else {
-          await axios.post(urlCompleta, { nome, desc: descricao, imglink });
+          await axios.post(urlCompleta, { nome, desc, imglink });
           alert("Evento adicionado com sucesso!");
         }
 
