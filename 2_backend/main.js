@@ -46,7 +46,14 @@ const eventSchema = mongoose.Schema({
     desc: {type: String, required: true},
     imglink: {type: String, required: true}
 })
-const Event = mongoose.model("Event", eventSchema)
+const EventSocial = mongoose.model("Event", eventSchema)
+
+const eventCorp = mongoose.Schema({
+    nome: {type: String, required: true,unique: true},
+    desc: {type: String, required: true},
+    imglink: {type: String, required: true}
+})
+const EventCorporativo = mongoose.model("EventCorporativo", eventCorp)
 
 // post para login de usuarios
 app.post('/login', async (req,res)=> {
@@ -92,18 +99,18 @@ app.post('/signup', async (req,res)=> {
 })
 
 // post para adicionar eventos
-app.post('/eventos', async (req,res)=> {
+app.post('/eventos-s', async (req,res)=> {
     try {
         const nome = req.body.nome
-        const desc = req.body.descricao
-        const imagem = req.body.imagem
+        const desc = req.body.desc
+        const imagem = req.body.imglink
         
-        const evento = new Event({
+        const evento = new EventSocial({
             nome: nome,
             desc: desc,
             imglink: imagem
         })
-    
+
         const respMongo = await evento.save()
         console.log(respMongo)
         res.end()
@@ -113,19 +120,19 @@ app.post('/eventos', async (req,res)=> {
 })
 
 // get para pegar todos os eventos ativos e passados
-app.get('/eventos', async (req,res)=> {
+app.get('/eventos-s', async (req,res)=> {
     try {
-        const events = await Event.find()
+        const events = await EventSocial.find()
         res.status(200).json(events)
     } catch (err) {
         res.status(500).json({ error: 'Erro ao buscar eventos'})
     }
 })
 
-app.post('/remover-eventos', async (req,res) =>{
+app.post('/r-eventos-s', async (req,res) =>{
     const nome = req.body.nome
     try {
-        const nomeEvento = await Event.deleteOne({ "nome":nome })
+        const nomeEvento = await EventSocial.deleteOne({ "nome":nome })
         if(!nomeEvento) {
             return res.status(404).json({ error: "Evento nao encontrado"})
         }
@@ -160,3 +167,46 @@ app.get('/contato', async (req,res)=> {
         res.status(500).json({ error: 'Erro ao buscar mensagens'})
     }
 });
+
+app.post('/eventos-c', async (req,res)=> {
+    try {
+        const nome = req.body.nome
+        const desc = req.body.desc
+        const imagem = req.body.imglink
+        
+        const evento = new EventCorporativo({
+            nome: nome,
+            desc: desc,
+            imglink: imagem
+        })
+
+        const respMongo = await evento.save()
+        console.log(respMongo)
+        res.end()
+    } catch(err) {
+        return res.status(500).json({ error: "Falha ao adicionar evento"})
+    }
+})
+
+app.get('/eventos-c', async (req,res)=> {
+    try {
+        const events = await EventCorporativo.find()
+        res.status(200).json(events)
+    } catch (err) {
+        res.status(500).json({ error: 'Erro ao buscar eventos'})
+    }
+})
+
+app.post('/r-eventos-c', async (req,res)=> {
+    const nome = req.body.nome
+    try {
+        const nomeEvento = await EventSocial.deleteOne({ "nome":nome })
+        if(!nomeEvento) {
+            return res.status(404).json({ error: "Evento nao encontrado"})
+        }
+        res.status(200).json({ message: "Evento deletado com sucesso"})
+
+    } catch (err) {
+        res.status(500).json({ error: "Erro ao remover evento"})
+    }
+})
