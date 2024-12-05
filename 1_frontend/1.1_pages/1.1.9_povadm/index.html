@@ -88,25 +88,11 @@
     <div class="d-flex justify-content-center my-2">
       <p class="fs-1">Eventos</p>
     </div>
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center gap-3">
       <div class="elementos p-3 rounded">
         <button type="button" class="btn btn-adicionar border-0" data-bs-toggle="modal" data-bs-target="#exampleModal"
           data-bs-title="Evento">
           <p>ADICIONAR EVENTO</p>
-          <div class="d-flex justify-content-center">
-            <img src="/1_frontend/1.2_assets/1.2.1_logos/mais.png" alt="botao-mais">
-          </div>
-        </button>
-      </div>
-    </div>
-    <div class="d-flex justify-content-center my-2">
-      <p class="fs-1">Serviços</p>
-    </div>
-    <div class="d-flex justify-content-center">
-      <div class="elementos p-3 rounded">
-        <button type="button" class="btn btn-adicionar border-0" data-bs-toggle="modal" data-bs-target="#exampleModal"
-          data-bs-title="Serviço">
-          <p>ADICIONAR SERVIÇO</p>
           <div class="d-flex justify-content-center">
             <img src="/1_frontend/1.2_assets/1.2.1_logos/mais.png" alt="botao-mais">
           </div>
@@ -124,13 +110,17 @@
           <div class="modal-body">
             <form>
               <div class="mb-3">
-                <label for="recipient-name" class="col-form-label" id="modal-label-name">Nome do serviço</label>
+                <label for="recipient-name" class="col-form-label" id="modal-label-name">Nome do evento</label>
                 <input type="text" class="form-control" id="nome-projeto" placeholder="Nome">
               </div>
               <div class="mb-3">
                 <label for="message-text" class="col-form-label" id="modal-label-description">Descricao do
-                  serviço</label>
-                <textarea class="form-control" id="descricao-projeto" placeholder="Descrição"></textarea>
+                  evento</label>
+                <textarea class="form-control" rows="8" id="descricao-projeto" placeholder="Descrição"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="img-link" class="col-form-label" id="modal-label-name">Link da imagem</label>
+                <input type="text" class="form-control" id="img-link" placeholder="Link">
               </div>
             </form>
           </div>
@@ -187,6 +177,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="script_back.js"></script>
 </body>
 
