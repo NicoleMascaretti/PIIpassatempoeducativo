@@ -166,6 +166,12 @@ nav {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
 }
 
+@media (max-width: 768px){
+  .titulocorp{
+    padding-left: 55px;
+  }
+}
+
 .subtitulotitulocorp {
   font-size: 1.2rem;
   /* tam menor (usei rem pq é mais flexivel e escalavel) */
@@ -256,22 +262,11 @@ nav {
 
 .card {
   border-radius: 15px;
-  overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
   text-align: center;
-  max-width: 400px;
-  /* Define a largura máxima */
-  height: 100%;
-  /* Garante altura uniforme */
-  flex-direction: column;
-  /* Alinha itens verticalmente */
-  justify-content: space-between;
-  /* Distribui espaço entre os itens */
+  height: auto;
   flex: 0 0 calc(33.333% - 20px);
-  /* Ocupa 1/3 do espaço disponível, menos o gap */
   margin: 0 10px;
-  /* Adiciona margem lateral uniforme */
-  display: flex;
   border: none;
   background-color: #FFF;
 }
@@ -302,6 +297,6 @@ nav {
 }
 
 .social-icon {
-    width: 35px;
-    height: 35px;
+  width: 35px;
+  height: 35px;
 }
