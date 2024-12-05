@@ -18,3 +18,22 @@ function togglePasswordVisibility(inputId, iconId) {
 document.getElementById('toggle-senha').addEventListener('click', function () {
     togglePasswordVisibility('senha', 'icone-senha');
 });
+
+async function Logar() {
+    const user = document.getElementById('usuario').value
+    const password = document.getElementById('senha').value
+    const data = {
+        "login": user,
+        "password":password
+    }
+    try {
+        const resposta = await axios.post("http://localhost:3000/login", data)
+        window.location.href = "/1_frontend/1.1_pages/1.1.9_povadm/index.html"
+
+    } catch (err) {
+        console.log(err)
+    }
+}
+
+
+

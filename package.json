@@ -4,7 +4,7 @@
   "description": "Esse repositório é destinado à um projeto da faculdade, onde usamos: HTML, CSS, JavaScript, fundamentos de UX/UI, estatística e lógica matemática para o desenvolvimento geral.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_OPTIONS='--no-deprecation' nodemon 2_backend/main.js",
+    "start": "nodemon main.js",
     "start:windows": "set NODE_OPTIONS=--no-deprecation && nodemon 2_backend/main.js"
   },
   "keywords": [],
