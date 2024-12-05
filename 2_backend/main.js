@@ -31,6 +31,15 @@ async function db_connect () {
 
 // Schemas
 
+//schema mensagem
+
+const mensgSchema = mongoose.Schema({
+    nome: {type:String, required: true},
+    email: {type:String, required: true},
+    mensagem: {type:String, required: true}
+})
+const Mensagem = mongoose.model("mensagens", mensgSchema)
+
 // schema usuarios
 const userSchema = mongoose.Schema({
     login: {type: String, required: true, unique: true},
