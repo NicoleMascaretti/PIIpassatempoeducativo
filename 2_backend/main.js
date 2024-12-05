@@ -209,7 +209,7 @@ app.get('/eventos-c', async (req,res)=> {
 app.post('/r-eventos-c', async (req,res)=> {
     const nome = req.body.nome
     try {
-        const nomeEvento = await EventSocial.deleteOne({ "nome":nome })
+        const nomeEvento = await EventCorporativo.deleteOne({ "nome":nome })
         if(!nomeEvento) {
             return res.status(404).json({ error: "Evento nao encontrado"})
         }
@@ -230,7 +230,7 @@ app.post('/update-eventos', async (req, res) => {
     }
 
     try {
-        const resultado = await Exemplo.findOneAndUpdate(
+        const resultado = await EventSocial.findOneAndUpdate(
             { nome: nome },
             { $set: novosDados },
             { new: true }
