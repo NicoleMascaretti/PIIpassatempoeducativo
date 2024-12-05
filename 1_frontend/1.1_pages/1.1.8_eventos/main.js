@@ -1,6 +1,6 @@
 const protocolo = "http://";
 const url = "localhost:3000";
-const endpoint = "/eventos";
+const endpoint = "/eventos-s";
 const urlCompleta = `${protocolo}${url}${endpoint}`;
 
 const criarCards = async () => {
