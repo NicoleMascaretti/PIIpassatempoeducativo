@@ -1,29 +1,35 @@
-async function cadastrarFilme() {
-    //constrói a URL completa
-    const URLCompleta = `${protocolo}${baseURL}${filmesEndpoint}`
-    //pega os inputs que contém os valores que o usuário digitou
-    let tituloInput = document.querySelector('#tituloInput')
-    let sinopseInput = document.querySelector('#sinopseInput')
-    //pega os valores digitados pelo usuário
-    let titulo = tituloInput.value
-    let sinopse = sinopseInput.value
-    //limpa os campos que o usuário digitou
-    tituloInput.value = ""
-    sinopseInput.value = ""
-    //envia os dados ao servidor (back end)
-    const filmes = (await axios.post(URLCompleta, {
-        titulo,
-        sinopse
-    })).data
-    //limpa a tabela para preenchê-la com a coleção nova, atualizada
-    let tabela = document.querySelector('.filmes')
-    let corpoTabela = tabela.getElementsByTagName('tbody')[0]
-    corpoTabela.innerHTML = ""
-    for (let filme of filmes) {
-        let linha = corpoTabela.insertRow(0)
-        let celulaTitulo = linha.insertCell(0)
-        let celulaSinopse = linha.insertCell(1)
-        celulaTitulo.innerHTML = filme.titulo
-        celulaSinopse.innerHTML = filme.sinopse
+async function enviarContato() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    const contactData = {
+        name: name,
+        email: email,
+        message: message
+    };
+
+    try {
+        const response = await fetch('http://your-api-endpoint/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(contactData)
+        });
+
+        if (response.ok) {
+            alert('Mensagem enviada com sucesso!');
+        } else {
+            alert('Erro ao enviar mensagem.');
+        }
+    } catch (error) {
+        console.error('Erro:', error);
+        alert('Erro ao enviar mensagem.');
     }
 }
+
+// document.getElementById('contactForm').addEventListener('submit', function(event) {
+//     event.preventDefault();
+//     submitContactForm();
+// });
