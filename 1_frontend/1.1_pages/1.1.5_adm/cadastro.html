@@ -11,6 +11,17 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <title>Cadastro</title>
 </head>
+<!--Plugin que garante acessibilidade-->
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
 
 <body>
     <div class="container-fluid mt-5 mb-5">
@@ -23,7 +34,8 @@
 
                 <!-- Logo -->
                 <div class="p-2 mb-3 logo-container">
-                    <img src="/1_frontend/1.2_assets/1.2.1_logos/logo.png" alt="logo do passatempo educativo" class="logo-left">
+                    <img src="/1_frontend/1.2_assets/1.2.1_logos/logo.png" alt="logo do passatempo educativo"
+                        class="logo-left">
                 </div>
 
                 <!------ Caixa de texto Email ------>
