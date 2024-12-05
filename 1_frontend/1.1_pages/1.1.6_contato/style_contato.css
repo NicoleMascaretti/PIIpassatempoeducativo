@@ -131,7 +131,7 @@ nav {
     width: 100%;
     flex-shrink: 0;
     background: #5C3100;
-    position: absolute;
+    position: relative;
     bottom: 0;
 }
 
