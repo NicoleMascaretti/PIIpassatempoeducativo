@@ -27,7 +27,7 @@ const criarCards = async () => {
       }
 
       const colDiv = document.createElement('div');
-      colDiv.classList.add('col-lg-3', 'col-md-4', 'col-sm-6', 'col-12');
+      colDiv.classList.add('col-lg-3', 'col-md-4', 'col-sm-6', 'col-12', 'rounded');
 
       const cardDiv = document.createElement('div');
       cardDiv.classList.add('card', 'border-0', 'h-100');
